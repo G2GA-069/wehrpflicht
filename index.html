@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <!-- htmlaunch:enhanced:v2 -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(204%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(234%2C72%25%2C48%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20text-anchor%3D%22middle%22%20font-family%3D%22-apple-system%2CBlinkMacSystemFont%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%3EW%3C%2Ftext%3E%3C%2Fsvg%3E">
 <meta name="theme-color" content="#14527b">
-<meta name="description" content="Germany&apos;s Defence Transformation — A Factual Analysis | deployed with HTMLaunch">
+<meta name="description" content="Deutschlands Verteidigungstransformation — A Factual Analysis | deployed with HTMLaunch">
 <link rel="canonical" href="https://G2GA-069.github.io/wehrpflicht/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Germany&apos;s Defence Transformation — A Factual Analysis">
-<meta property="og:title" content="Germany&apos;s Defence Transformation — A Factual Analysis">
-<meta property="og:description" content="Germany&apos;s Defence Transformation — A Factual Analysis | deployed with HTMLaunch">
+<meta property="og:site_name" content="Deutschlands Verteidigungstransformation — A Factual Analysis">
+<meta property="og:title" content="Deutschlands Verteidigungstransformation — A Factual Analysis">
+<meta property="og:description" content="Deutschlands Verteidigungstransformation — A Factual Analysis | deployed with HTMLaunch">
 <meta property="og:url" content="https://G2GA-069.github.io/wehrpflicht/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://avatars.githubusercontent.com/G2GA-069?s=460">
-<meta property="og:image:alt" content="Germany&apos;s Defence Transformation — A Factual Analysis">
+<meta property="og:image:alt" content="Deutschlands Verteidigungstransformation — A Factual Analysis">
 <meta property="og:image:width" content="460">
 <meta property="og:image:height" content="460">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Germany&apos;s Defence Transformation — A Factual Analysis">
-<meta name="twitter:description" content="Germany&apos;s Defence Transformation — A Factual Analysis | deployed with HTMLaunch">
+<meta name="twitter:title" content="Deutschlands Verteidigungstransformation — A Factual Analysis">
+<meta name="twitter:description" content="Deutschlands Verteidigungstransformation — A Factual Analysis | deployed with HTMLaunch">
 <meta name="twitter:image" content="https://avatars.githubusercontent.com/G2GA-069?s=460">
-<meta name="twitter:image:alt" content="Germany&apos;s Defence Transformation — A Factual Analysis">
+<meta name="twitter:image:alt" content="Deutschlands Verteidigungstransformation — A Factual Analysis">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Germany's Defence Transformation — A Factual Analysis</title>
+<title>Deutschlands Verteidigungstransformation — A Factual Analysis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
@@ -64,6 +64,7 @@ body {
 
 /* ─── TOP RIBBON ─── */
 .ribbon {
+  margin-top: 3px;
   background: var(--navy);
   color: rgba(255,255,255,0.85);
   font-size: 11px;
@@ -122,50 +123,27 @@ nav {
 .nav-links a:hover { color: var(--navy); border-bottom-color: var(--navy); }
 
 /* Language Switcher */
-.lang-sw { position:relative; margin-left:14px; }
-.lang-sw-btn {
-  display:inline-flex; align-items:center; gap:5px; padding:5px 10px;
-  border:1px solid var(--border); border-radius:4px; background:#fff;
-  font:600 11px/1 var(--sans); letter-spacing:.04em; color:var(--gray-4);
-  cursor:pointer; white-space:nowrap;
-}
-.lang-sw-btn:hover { border-color:var(--navy); color:var(--navy); }
-.lang-sw-menu {
-  display:none; position:absolute; top:calc(100% + 6px); right:0;
-  background:#fff; border:1px solid var(--border); border-radius:6px;
-  box-shadow:0 8px 24px rgba(0,0,0,.12); z-index:999; min-width:152px;
-  overflow:hidden;
-}
-.lang-sw-menu.show { display:block; }
-.lang-sw-opt {
-  display:block; width:100%; padding:10px 16px; border:0; background:0;
-  text-align:left; font:400 13px/1.4 var(--sans); color:var(--gray-5);
-  cursor:pointer;
-}
-.lang-sw-opt:hover { background:var(--gray-1); }
-.lang-sw-opt.on { font-weight:700; color:var(--navy); background:#f0f4ff; }
-.lang-sw-opt small { color:var(--gray-3); margin-left:6px; font-size:11px; }
-
-/* Personal Summary */
-.ps-card {
-  background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.13);
-  border-radius:8px; padding:24px;
-}
-.ps-card-label {
-  font-size:10px; font-weight:700; letter-spacing:.12em;
-  text-transform:uppercase; color:var(--gold-light); margin-bottom:14px;
-}
-.ps-list { list-style:none; padding:0; margin:0; }
-.ps-list li {
-  padding:8px 0; border-bottom:1px solid rgba(255,255,255,.07);
-  font-size:14px; color:rgba(255,255,255,.85); line-height:1.7;
-}
-.ps-list li:last-child { border-bottom:0; }
-.ps-risk-grid {
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;
-}
-.ps-risk-col h4 { font-size:13px; font-weight:600; color:#fff; margin-bottom:6px; }
-.ps-risk-col p { font-size:13px; color:rgba(255,255,255,.65); line-height:1.6; }
+.lang-sw{position:relative;margin-left:14px}
+.lang-sw-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border:1px solid var(--border);border-radius:4px;background:#fff;font:600 11px/1 var(--sans);letter-spacing:.04em;color:var(--gray-4);cursor:pointer;white-space:nowrap}
+.lang-sw-btn:hover{border-color:var(--navy);color:var(--navy)}
+.lang-sw-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--border);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:999;min-width:140px;overflow:hidden}
+.lang-sw-menu.show{display:block}
+.lang-sw-opt{display:block;width:100%;padding:10px 14px;border:0;background:0;text-align:left;font:400 13px/1.4 var(--sans);color:var(--gray-5);cursor:pointer}
+.lang-sw-opt:hover{background:var(--gray-1)}
+.lang-sw-opt.on{font-weight:700;color:var(--navy);background:#f0f4ff}
+.lang-sw-opt small{color:var(--gray-3);margin-left:6px;font-size:11px}
+/* Personal summary */
+.ps-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:8px;padding:24px}
+.ps-card-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px}
+.ps-list{list-style:none;padding:0;margin:0}
+.ps-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:14px;color:rgba(255,255,255,.85);line-height:1.7}
+.ps-list li:last-child{border-bottom:0}
+.ps-risk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.ps-risk-col h4{font-size:13px;font-weight:600;color:#fff;margin-bottom:6px}
+.ps-risk-col p{font-size:13px;color:rgba(255,255,255,.65);line-height:1.6}
+/* Source tooltips */
+.src{position:relative;cursor:help;color:var(--navy-light);font-size:10px;vertical-align:super;font-weight:600}
+.src:hover::after,.src:focus::after{content:attr(data-s);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;padding:8px 12px;border-radius:4px;font-size:11px;font-weight:400;white-space:normal;width:max-content;max-width:300px;z-index:100;line-height:1.5;box-shadow:0 4px 12px rgba(0,0,0,.2)}
 
 /* ─── HERO ─── */
 .hero {
@@ -561,7 +539,7 @@ nav {
 }
 .ratchet-destination .d-title { font-size: 17px; font-weight: 600; }
 
-/* Detail sections use expandable .analyst-box */
+/* Detail sections: expandable */
 
 /* Footer */
 footer {
@@ -587,54 +565,42 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 700px) {
-  .hero-stats { grid-template-columns: 1fr; }
-  .two-col, .three-col { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-  .ratchet-wrap { grid-template-columns: 1fr; }
-  .ratchet-destination { grid-column: 1; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .hero { padding: 48px 16px 40px; }
-  .hero h1 { font-size: 24px; }
-  .hero-sub { font-size: 15px; margin-bottom: 28px; }
-  .hero-stat { padding: 18px 16px; }
-  .hero-stat-num { font-size: 30px; }
-  .hero-stat-num sup { font-size: 16px; }
-  .section { padding: 48px 16px; }
-  .section h2 { font-size: 20px; }
-  .section-lead { font-size: 15px; }
-  .simple-box { padding: 16px 18px; }
-  .simple-box p { font-size: 14px; }
-  .chart-wrap { padding: 16px; }
-  .chart-featured { padding: 20px; }
-  .chart-featured .chart-title { font-size: 16px; }
-  .finding { padding: 24px 20px; }
-  .finding h3 { font-size: 17px; }
-  .finding p { font-size: 13px; }
-  .data-table { font-size: 12px; }
-  .data-table th { font-size: 10px; padding: 8px 10px; }
-  .data-table td { padding: 7px 10px; }
-  .metric { padding: 14px; }
-  .metric-num { font-size: 26px; }
-  .ribbon { font-size: 10px; padding: 6px 12px; }
-  .nav-inner { height: 44px; }
-  .nav-brand { font-size: 13px; }
-  .lang-sw-btn { font-size: 10px; padding: 4px 8px; }
-  footer { padding: 32px 16px; }
-  .footer-inner p { font-size: 11px; }
-  #personal { padding: 36px 16px !important; }
-  .ps-risk-grid { grid-template-columns: 1fr; }
+@media(max-width:700px){
+  .hero-stats,.two-col,.three-col{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .ratchet-wrap{grid-template-columns:1fr}
+  .ratchet-destination{grid-column:1}
+  .footer-grid{grid-template-columns:1fr}
+  .hero{padding:48px 16px 40px} .hero h1{font-size:24px}
+  .hero-sub{font-size:15px} .hero-stat{padding:18px 16px}
+  .hero-stat-num{font-size:30px} .hero-stat-num sup{font-size:16px}
+  .section{padding:48px 16px} .section h2{font-size:20px}
+  .section-lead{font-size:15px}
+  .simple-box{padding:16px 18px} .simple-box p{font-size:14px}
+  .chart-wrap{padding:16px} .chart-featured{padding:20px}
+  .chart-featured .chart-title{font-size:16px}
+  .finding{padding:24px 20px} .finding h3{font-size:17px}
+  .data-table{font-size:12px} .data-table th{font-size:10px;padding:8px 10px}
+  .data-table td{padding:7px 10px}
+  .metric{padding:14px} .metric-num{font-size:26px}
+  .ribbon{font-size:10px;padding:6px 12px;margin-top:3px}
+  .nav-inner{height:44px} .nav-brand{font-size:13px}
+  .lang-sw-btn{font-size:10px;padding:4px 8px}
+  footer{padding:32px 16px}
+  #personal{padding:36px 16px!important}
+  .ps-risk-grid{grid-template-columns:1fr}
+  .spanel{padding:18px!important}
 }
-@media (max-width: 480px) {
-  .hero h1 { font-size: 20px; }
-  .hero-stat-num { font-size: 24px; }
-  .ribbon { font-size: 9px; letter-spacing: .04em; }
-  .chart-title { font-size: 13px !important; }
-  .chart-sub { font-size: 11px !important; }
+@media(max-width:480px){
+  .hero h1{font-size:20px}
+  .hero-stat-num{font-size:24px}
+  .ribbon{font-size:9px}
+  .chart-title{font-size:13px!important}
 }
 </style>
 </head>
 <body>
+<div style="height:3px;background:linear-gradient(to right,#000 33%,#dd0000 33%,#dd0000 66%,#ffcc00 66%);position:fixed;top:0;left:0;right:0;z-index:10000"></div>
 
 <div class="ribbon">
   <span class="rb-t">Germany's Defence Transformation</span>
@@ -659,12 +625,11 @@ footer {
       <li><a href="#dates">Key Dates</a></li>
     </ul>
     <div class="lang-sw">
-      <button class="lang-sw-btn" id="lsBtn">&#127760; <span id="lsCur">EN</span> &#9662;</button>
+      <button class="lang-sw-btn" id="lsBtn">&#127760; <span id="lsCur">DE</span> &#9662;</button>
       <div class="lang-sw-menu" id="lsMenu">
-        <button class="lang-sw-opt on" data-l="en">English</button>
-        <button class="lang-sw-opt" data-l="de">Deutsch <small>German</small></button>
-        <button class="lang-sw-opt" data-l="fr">Français <small>French</small></button>
-        <button class="lang-sw-opt" data-l="es">Español <small>Spanish</small></button>
+        <button class="lang-sw-opt" data-l="en">English</button>
+        <button class="lang-sw-opt on" data-l="de">Deutsch</button>
+        <button class="lang-sw-opt" data-l="fr">Français</button>
       </div>
     </div>
   </div>
@@ -701,53 +666,41 @@ footer {
 <section id="personal" style="background:linear-gradient(135deg,#1a2744 0%,#2c3e6b 100%);color:#fff;padding:56px 24px;border-bottom:3px solid var(--gold)">
   <div class="section-inner">
     <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
-      <div style="width:36px;height:36px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">⚠</div>
+      <div style="width:36px;height:36px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">&#9888;</div>
       <div>
-        <div class="ps-label" style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light)">What this means for you personally</div>
-        <div class="ps-sub" style="font-size:12px;color:rgba(255,255,255,.45)">If you are a German man aged 17–45 — or know one</div>
+        <div class="ps-label" style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light)">Was das für Sie persönlich bedeutet</div>
+        <div class="ps-sub" style="font-size:12px;color:rgba(255,255,255,.45)">Wenn Sie ein deutscher Mann zwischen 17 und 45 sind — oder einen kennen</div>
       </div>
     </div>
-
-    <p class="ps-headline" style="font-family:var(--serif);font-size:clamp(18px,2.2vw,23px);font-weight:700;color:#fff;line-height:1.35;max-width:800px;margin-bottom:32px">Since January 1, 2026, every German male aged 17–45 is subject to military oversight, a travel restriction, and inclusion in a national conscription register — whether or not he has ever served. Mandatory medical assessments begin July 2027. The law contains a built-in path to compulsory service.</p>
-
+    <p class="ps-headline" style="font-family:var(--serif);font-size:clamp(18px,2.2vw,23px);font-weight:700;color:#fff;line-height:1.35;max-width:800px;margin-bottom:32px">Seit dem 1. Januar 2026 unterliegt jeder deutsche Mann zwischen 17 und 45 der militärischen Überwachung, einer Reisebeschränkung und der Aufnahme in ein Wehrpflichtregister — unabhängig davon, ob er je gedient hat. Pflichtmusterungen beginnen im Juli 2027. Das Gesetz enthält einen vorgezeichneten Weg zur Wehrpflicht.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:28px">
       <div class="ps-card">
-        <div class="ps-card-label ps-c1-label">Already in force — no vote needed</div>
+        <div class="ps-card-label ps-c1-label">Bereits in Kraft — keine Abstimmung nötig</div>
         <ul class="ps-list">
-          <li class="ps-c1-1">• <strong>Travel restriction:</strong> You need Bundeswehr approval to leave Germany for more than 3 months. Currently described as “generally granted,” but the legal obligation exists.</li>
-          <li class="ps-c1-2">• <strong>Conscription register:</strong> Your data is being entered into a national military database — contact details, fitness status, qualifications.</li>
-          <li class="ps-c1-3">• <strong>Mandatory questionnaire:</strong> If born 2008 or later, you must complete an online military fitness declaration on turning 18.</li>
-          <li class="ps-c1-4">• <strong>Automatic trigger:</strong> If the Bundestag declares a state of defence, conscription reactivates instantly under a 1956 law. No new legislation needed.</li>
+          <li class="ps-c1-1">&#8226; <strong>Reisebeschränkung:</strong> Sie benötigen eine Genehmigung der Bundeswehr, um Deutschland für mehr als 3 Monate zu verlassen. Derzeit „in der Regel zu erteilen" — aber die Pflicht besteht.</li>
+          <li class="ps-c1-2">&#8226; <strong>Wehrpflichtregister:</strong> Ihre Daten werden in eine nationale militärische Datenbank aufgenommen — Kontaktdaten, Tauglichkeit, Qualifikationen.</li>
+          <li class="ps-c1-3">&#8226; <strong>Pflichtfragebogen:</strong> Ab Jahrgang 2008 müssen Sie mit 18 eine Online-Bereitschaftserklärung ausfüllen.</li>
+          <li class="ps-c1-4">&#8226; <strong>Automatischer Auslöser:</strong> Bei Verteidigungsfall tritt die Wehrpflicht sofort in Kraft — Gesetz von 1956. Kein neues Gesetz nötig.</li>
         </ul>
       </div>
       <div class="ps-card">
-        <div class="ps-card-label ps-c2-label">Coming next</div>
+        <div class="ps-card-label ps-c2-label">Was als Nächstes kommt</div>
         <ul class="ps-list">
-          <li class="ps-c2-1">• <strong>July 2027:</strong> Mandatory medical assessment (Musterung) for all men born 2008+. Results permanently recorded.</li>
-          <li class="ps-c2-2">• <strong>Mid-2027:</strong> First official reserve report to the Bundestag. This analysis shows it will document a shortfall — the legal precondition for the next step.</li>
-          <li class="ps-c2-3">• <strong>2028–2030 (est.):</strong> Parliamentary vote on needs-based conscription. The reserve cannot reach 200,000 voluntarily. Projected: ~28,000 by 2033. Gap: ~170,000. This arithmetic is the mechanism that drives the vote.</li>
+          <li class="ps-c2-1">&#8226; <strong>Juli 2027:</strong> Pflichtmusterung für alle Männer ab Jahrgang 2008. Ergebnisse dauerhaft gespeichert.</li>
+          <li class="ps-c2-2">&#8226; <strong>Mitte 2027:</strong> Erster Reservebericht an den Bundestag. Diese Analyse zeigt, dass er einen Fehlbestand dokumentieren wird — die Voraussetzung für den nächsten Schritt.</li>
+          <li class="ps-c2-3">&#8226; <strong>2028–2030 (geschätzt):</strong> Bundestagsabstimmung über Bedarfswehrpflicht. Die Reserve kann 200.000 nicht freiwillig erreichen. Prognose: ~28.000 bis 2033. Lücke: ~170.000.</li>
         </ul>
       </div>
     </div>
-
     <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:24px;margin-bottom:20px">
-      <div class="ps-card-label ps-risk-label">Individual risk by age group</div>
+      <div class="ps-card-label ps-risk-label">Individuelles Risiko nach Altersgruppe</div>
       <div class="ps-risk-grid">
-        <div class="ps-risk-col">
-          <h4 class="ps-r1-title">17–25 years old (born 2001–2009)</h4>
-          <p class="ps-r1-text">Highest exposure. Register data most complete when a conscription vote is likely. If 30,000 called annually from ~2.5M eligible: ~1.2%/year, ~19% cumulative over 17-year window.</p>
-        </div>
-        <div class="ps-risk-col">
-          <h4 class="ps-r2-title">26–35 years old (born 1991–2000)</h4>
-          <p class="ps-r2-text">In scope, lower priority. Travel restriction applies. Younger cohorts with complete data are operationally more likely targets.</p>
-        </div>
-        <div class="ps-risk-col">
-          <h4 class="ps-r3-title">36–45 years old (born 1981–1990)</h4>
-          <p class="ps-r3-text">Aging out of eligibility 2026–2035. Travel restriction until 45. Low call-up probability but not zero.</p>
-        </div>
+        <div class="ps-risk-col"><h4 class="ps-r1-title">17–25 Jahre (geb. 2001–2009)</h4><p class="ps-r1-text">Höchstes Risiko. Registerdaten am vollständigsten bei einer Abstimmung. Bei 30.000/Jahr aus 2,5 Mio.: ~1,2%/Jahr, ~19% kumuliert über 17 Jahre.</p></div>
+        <div class="ps-risk-col"><h4 class="ps-r2-title">26–35 Jahre (geb. 1991–2000)</h4><p class="ps-r2-text">Im Rahmen, niedrigere Priorität. Reisebeschränkung gilt. Jüngere Jahrgänge mit vollständigen Daten sind wahrscheinlichere Ziele.</p></div>
+        <div class="ps-risk-col"><h4 class="ps-r3-title">36–45 Jahre (geb. 1981–1990)</h4><p class="ps-r3-text">Reserve-Berechtigung läuft 2026–2035 aus. Reisebeschränkung bis 45. Niedrige Einberufungswahrscheinlichkeit, aber nicht null.</p></div>
       </div>
     </div>
-    <p class="ps-note" style="font-size:11px;color:rgba(255,255,255,.35);line-height:1.65;max-width:720px">Probabilities are order-of-magnitude estimates, not predictions. Actual risk depends on a selection mechanism not yet legislated. Conscientious objection remains a constitutional right (Art. 4 Abs. 3 GG). Full sourced analysis below.</p>
+    <p class="ps-note" style="font-size:11px;color:rgba(255,255,255,.35);line-height:1.65;max-width:720px">Wahrscheinlichkeiten sind Größenordnungsschätzungen, keine Vorhersagen. Kriegsdienstverweigerung bleibt Grundrecht (Art. 4 Abs. 3 GG). Vollständige Analyse mit Quellen folgt.</p>
   </div>
 </section>
 
@@ -1270,14 +1223,14 @@ footer {
     
     <!-- HISTORICAL RESERVE CONTEXT -->
     <div class="chart-wrap" style="margin-bottom:32px">
-      <div class="chart-title hrc-t">Bundeswehr reserve strength: 55 years of history</div>
-      <div class="chart-sub hrc-s">From mass conscription army to voluntary shortfall. The collapse of the trained reserve is not a forecast — it already happened.</div>
+      <div class="chart-title hrc-t">Reservestärke der Bundeswehr: 55 Jahre Kontext</div>
+      <div class="chart-sub hrc-s">Von der Massenarmee zur freiwilligen Unterbesetzung. Der Zusammenbruch der ausgebildeten Reserve ist keine Prognose — er ist bereits eingetreten.</div>
       <div class="legend" style="margin-bottom:12px">
-        <div class="legend-item"><div class="legend-swatch" style="background:#1a2744"></div><span class="hrc-l1">Trained reserve (estimated)</span></div>
-        <div class="legend-item"><div class="legend-dash" style="border-color:#e8c86a"></div><span class="hrc-l2">WDModG statutory target (from 2026)</span></div>
+        <div class="legend-item"><div class="legend-swatch" style="background:#1a2744"></div><span class="hrc-l1">Ausgebildete Reserve (geschätzt)</span></div>
+        <div class="legend-item"><div class="legend-dash" style="border-color:#e8c86a"></div><span class="hrc-l2">WDModG-Ziel (ab 2026)</span></div>
       </div>
       <div class="chart-container" style="height:300px"><canvas id="histChart"></canvas></div>
-      <div class="chart-note">Sources: IISS Military Balance; BMVg annual reports. Pre-2000 estimates based on conscript throughput. Red dashed line: 2011 conscription suspension.</div>
+      <div class="chart-note hrc-n">Quellen: IISS Military Balance; BMVg-Jahresberichte. Rote Markierung: 2011 Aussetzung der Wehrpflicht.</div>
     </div>
 
     <div class="chart-featured">
@@ -1822,225 +1775,195 @@ new Chart(document.getElementById('flowsChart'), {
 </script>
 <script>
 /* Historical Reserve Chart */
-(function(){
-  var c=document.getElementById("histChart");
-  if(!c)return;
-  new Chart(c,{
-    type:"line",
-    data:{
-      labels:["1970","1975","1980","1985","1990","1995","2000","2005","2010","2015","2020","2025","2026","2028","2030","2032","2033","2035"],
-      datasets:[
-        {label:"Trained reserve (est.)",data:[350,380,420,450,480,380,320,280,240,160,110,60,55,45,37,30,28,22],borderColor:"#1a2744",backgroundColor:"rgba(26,39,68,0.08)",borderWidth:2.5,fill:true,tension:0.3,pointRadius:[0,0,0,0,2,0,2,0,2,2,2,4,0,0,0,0,0,0],pointBackgroundColor:"#1a2744"},
-        {label:"WDModG target",data:[null,null,null,null,null,null,null,null,null,null,null,null,70,100,140,180,200,200],borderColor:"#e8c86a",backgroundColor:"transparent",borderWidth:2.5,borderDash:[7,4],tension:0.2,pointRadius:3,pointBackgroundColor:"#e8c86a",spanGaps:false},
-        {label:"2011",data:[null,null,null,null,null,null,null,null,225,null,null,null,null,null,null,null,null,null],borderColor:"rgba(178,34,34,0.6)",backgroundColor:"transparent",pointRadius:6,pointBackgroundColor:"rgba(178,34,34,0.6)",pointStyle:"crossRot",showLine:false}
-      ]
-    },
-    options:{
-      responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{mode:"index",intersect:false,filter:function(i){return i.parsed.y!==null&&i.datasetIndex<2;},callbacks:{label:function(c){if(c.parsed.y==null)return null;return " "+c.dataset.label+": ~"+Math.round(c.parsed.y)+",000";}}}},
-      scales:{
-        x:{grid:{color:"rgba(0,0,0,0.06)"},ticks:{color:"#6c757d",maxTicksLimit:10}},
-        y:{grid:{color:"rgba(0,0,0,0.06)"},min:0,max:520,ticks:{color:"#6c757d",callback:function(v){return v+"k";}},title:{display:true,text:"Trained reservists (thousands)",color:"#6c757d",font:{size:10}}}
-      }
-    }
-  });
-})();
+(function(){var c=document.getElementById("histChart");if(!c)return;
+new Chart(c,{type:"line",data:{
+labels:["1970","1975","1980","1985","1990","1995","2000","2005","2010","2015","2020","2025","2026","2028","2030","2032","2033","2035"],
+datasets:[
+{label:"Trained reserve (est.)",data:[350,380,420,450,480,380,320,280,240,160,110,60,55,45,37,30,28,22],borderColor:"#1a2744",backgroundColor:"rgba(26,39,68,0.08)",borderWidth:2.5,fill:true,tension:0.3,pointRadius:[0,0,0,0,2,0,2,0,2,2,2,4,0,0,0,0,0,0],pointBackgroundColor:"#1a2744"},
+{label:"WDModG target",data:[null,null,null,null,null,null,null,null,null,null,null,null,70,100,140,180,200,200],borderColor:"#e8c86a",backgroundColor:"transparent",borderWidth:2.5,borderDash:[7,4],tension:0.2,pointRadius:3,pointBackgroundColor:"#e8c86a",spanGaps:false},
+{label:"2011",data:[null,null,null,null,null,null,null,null,225,null,null,null,null,null,null,null,null,null],borderColor:"rgba(178,34,34,0.6)",backgroundColor:"transparent",pointRadius:6,pointBackgroundColor:"rgba(178,34,34,0.6)",pointStyle:"crossRot",showLine:false}
+]},options:{responsive:true,maintainAspectRatio:false,
+plugins:{legend:{display:false},tooltip:{mode:"index",intersect:false,filter:function(i){return i.parsed.y!==null&&i.datasetIndex<2;},callbacks:{label:function(c){if(c.parsed.y==null)return null;return" "+c.dataset.label+": ~"+Math.round(c.parsed.y)+",000";}}}},
+scales:{x:{grid:{color:"rgba(0,0,0,0.06)"},ticks:{color:"#6c757d",maxTicksLimit:10}},
+y:{grid:{color:"rgba(0,0,0,0.06)"},min:0,max:520,ticks:{color:"#6c757d",callback:function(v){return v+"k";}},title:{display:true,text:"Trained reservists (thousands)",color:"#6c757d",font:{size:10}}}
+}}});})();
 </script>
 <script>
-/* ——— i18n Language Switcher ——— */
-(function(){
-  "use strict";
-  var btn=document.getElementById("lsBtn"),
-      menu=document.getElementById("lsMenu"),
-      cur=document.getElementById("lsCur");
-  if(!btn||!menu||!cur)return;
-
-  btn.onclick=function(e){e.stopPropagation();menu.classList.toggle("show");};
-  document.addEventListener("click",function(){menu.classList.remove("show");});
-
-  var R=[
-    /* HERO */
-    [".hero-label",0,{en:"Factual Analysis \u00b7 Germany \u00b7 2022\u20132035",de:"Faktenanalyse \u00b7 Deutschland \u00b7 2022\u20132035",fr:"Analyse factuelle \u00b7 Allemagne \u00b7 2022\u20132035",es:"An\u00e1lisis factual \u00b7 Alemania \u00b7 2022\u20132035"}],
-    [".hero h1",0,{en:"Three laws, \u20ac600bn, and a mathematical structure that works regardless of outcome",de:"Drei Gesetze, 600\u00a0Mrd.\u00a0\u20ac und eine mathematische Struktur, die unabh\u00e4ngig vom Ergebnis funktioniert",fr:"Trois lois, 600\u00a0Mds\u00a0\u20ac et une structure math\u00e9matique qui fonctionne quel que soit le r\u00e9sultat",es:"Tres leyes, 600.000\u00a0M\u20ac y una estructura matem\u00e1tica que funciona con independencia del resultado"}],
-    [".hero-sub",0,{en:"This analysis examines what Germany\u2019s defence transformation actually shows in the data: spending, personnel, legal architecture, and \u2014 most importantly \u2014 the reserve arithmetic that determines the critical path.",de:"Diese Analyse untersucht, was Deutschlands Verteidigungstransformation in den Daten zeigt: Ausgaben, Personal, Rechtsarchitektur und \u2014 vor allem \u2014 die Reservearithmetik, die den kritischen Pfad bestimmt.",fr:"Cette analyse examine ce que la transformation de la d\u00e9fense allemande r\u00e9v\u00e8le: d\u00e9penses, effectifs, architecture juridique et \u2014 surtout \u2014 l\u2019arithm\u00e9tique de la r\u00e9serve.",es:"Este an\u00e1lisis examina lo que la transformaci\u00f3n de la defensa alemana muestra: gasto, personal, arquitectura jur\u00eddica y \u2014 sobre todo \u2014 la aritm\u00e9tica de la reserva."}],
-    /* HERO STATS */
-    [".hero-stat-label",0,{en:"2026 defence budget",de:"Verteidigungshaushalt 2026",fr:"Budget de d\u00e9fense 2026",es:"Presupuesto de defensa 2026"}],
-    [".hero-stat-sub",0,{en:"Up from \u20ac33bn in 2015 \u2014 a 3.3\u00d7 increase",de:"Von 33\u00a0Mrd.\u00a0\u20ac (2015) \u2014 3,3-fach",fr:"Depuis 33\u00a0Mds\u00a0\u20ac en 2015 \u2014 \u00d73,3",es:"Desde 33.000\u00a0M\u20ac en 2015 \u2014 3,3\u00d7"}],
-    [".hero-stat-label",1,{en:"Trained reservists today",de:"Ausgebildete Reservisten heute",fr:"R\u00e9servistes form\u00e9s aujourd\u2019hui",es:"Reservistas formados hoy"}],
-    [".hero-stat-sub",1,{en:"Law requires 200,000 by 2033",de:"Gesetz verlangt 200.000 bis 2033",fr:"La loi exige 200\u00a0000 d\u2019ici 2033",es:"La ley exige 200.000 para 2033"}],
-    [".hero-stat-label",2,{en:"First mandatory reserve report",de:"Erster Pflicht-Reservebericht",fr:"Premier rapport obligatoire",es:"Primer informe obligatorio"}],
-    [".hero-stat-sub",2,{en:"When the shortfall becomes legally documented",de:"Wenn der Fehlbestand rechtlich dokumentiert wird",fr:"Quand le d\u00e9ficit sera document\u00e9",es:"Cuando el d\u00e9ficit quede documentado"}],
-    /* NAV */
-    [".nav-brand",0,{en:"Germany\u2019s Defence Transformation",de:"Verteidigungstransformation",fr:"D\u00e9fense allemande",es:"Defensa de Alemania"}],
-    [".nav-links a",0,{en:"Analysis A\u00b7B\u00b7C",de:"Analyse A\u00b7B\u00b7C",fr:"Analyse A\u00b7B\u00b7C",es:"An\u00e1lisis A\u00b7B\u00b7C"}],
-    [".nav-links a",1,{en:"Spending",de:"Ausgaben",fr:"D\u00e9penses",es:"Gasto"}],
-    [".nav-links a",2,{en:"The Law",de:"Das Gesetz",fr:"La loi",es:"La ley"}],
-    [".nav-links a",3,{en:"Active Force",de:"Aktive Truppe",fr:"Force active",es:"Fuerza activa"}],
-    [".nav-links a",4,{en:"Reserve",de:"Reserve",fr:"R\u00e9serve",es:"Reserva"}],
-    [".nav-links a",5,{en:"Mechanism",de:"Mechanismus",fr:"M\u00e9canisme",es:"Mecanismo"}],
-    [".nav-links a",6,{en:"Key Dates",de:"Termine",fr:"Dates cl\u00e9s",es:"Fechas clave"}],
-    /* RIBBON */
-    [".rb-t",0,{en:"Germany\u2019s Defence Transformation",de:"Deutschlands Verteidigungstransformation",fr:"Transformation de la d\u00e9fense allemande",es:"Transformaci\u00f3n de la defensa de Alemania"}],
-    [".rb-t",1,{en:"Factual Analysis",de:"Faktenanalyse",fr:"Analyse factuelle",es:"An\u00e1lisis factual"}],
-    [".rb-t",2,{en:"Data current: April 2026",de:"Datenstand: April 2026",fr:"Donn\u00e9es: avril 2026",es:"Datos: abril 2026"}],
-    [".rb-t",3,{en:"Independent research \u2014 no political position",de:"Unabh\u00e4ngige Analyse \u2014 keine politische Position",fr:"Recherche ind\u00e9pendante \u2014 sans position politique",es:"Investigaci\u00f3n independiente \u2014 sin posici\u00f3n pol\u00edtica"}],
-    /* PART TITLES */
-    [".part-title",0,{en:"Why this analysis exists",de:"Warum diese Analyse existiert",fr:"Pourquoi cette analyse existe",es:"Por qu\u00e9 existe este an\u00e1lisis"}],
-    [".part-title",1,{en:"What the law does \u2014 a German man\u2019s legal status, precisely",de:"Was das Gesetz bewirkt \u2014 der Rechtsstatus eines deutschen Mannes",fr:"Ce que la loi fait \u2014 le statut juridique d\u2019un homme allemand",es:"Lo que la ley hace \u2014 el estatus jur\u00eddico de un hombre alem\u00e1n"}],
-    [".part-title",2,{en:"What the numbers tell us will happen",de:"Was die Zahlen \u00fcber die Zukunft sagen",fr:"Ce que les chiffres annoncent",es:"Lo que los n\u00fameros dicen que ocurrir\u00e1"}],
-    /* SECTION NUMS */
-    [".section-num",0,{en:"Section 1 \u00b7 Context",de:"Abschnitt 1 \u00b7 Kontext",fr:"Section 1 \u00b7 Contexte",es:"Secci\u00f3n 1 \u00b7 Contexto"}],
-    [".section-num",1,{en:"Section 2 \u00b7 Spending",de:"Abschnitt 2 \u00b7 Ausgaben",fr:"Section 2 \u00b7 D\u00e9penses",es:"Secci\u00f3n 2 \u00b7 Gasto"}],
-    [".section-num",2,{en:"Section 3 \u00b7 The Law",de:"Abschnitt 3 \u00b7 Das Gesetz",fr:"Section 3 \u00b7 La loi",es:"Secci\u00f3n 3 \u00b7 La ley"}],
-    [".section-num",3,{en:"Section 4 \u00b7 Active Force",de:"Abschnitt 4 \u00b7 Aktive Truppe",fr:"Section 4 \u00b7 Force active",es:"Secci\u00f3n 4 \u00b7 Fuerza activa"}],
-    [".section-num",4,{en:"Section 5 \u00b7 The Reserve \u2014 The Path to Conscription",de:"Abschnitt 5 \u00b7 Die Reserve \u2014 Der Weg zur Wehrpflicht",fr:"Section 5 \u00b7 La r\u00e9serve \u2014 Vers la conscription",es:"Secci\u00f3n 5 \u00b7 La reserva \u2014 Camino a la conscripci\u00f3n"}],
-    [".section-num",5,{en:"Section 6 \u00b7 The Mechanism",de:"Abschnitt 6 \u00b7 Der Mechanismus",fr:"Section 6 \u00b7 Le m\u00e9canisme",es:"Secci\u00f3n 6 \u00b7 El mecanismo"}],
-    [".section-num",6,{en:"Section 7 \u00b7 Decision Calendar",de:"Abschnitt 7 \u00b7 Entscheidungskalender",fr:"Section 7 \u00b7 Calendrier",es:"Secci\u00f3n 7 \u00b7 Calendario"}],
-    [".section-num",7,{en:"Summary",de:"Zusammenfassung",fr:"R\u00e9sum\u00e9",es:"Resumen"}],
-    /* SECTION H2 */
-    [".section h2",0,{en:"Three structural changes since 2022",de:"Drei strukturelle Ver\u00e4nderungen seit 2022",fr:"Trois changements structurels depuis 2022",es:"Tres cambios estructurales desde 2022"}],
-    [".section h2",1,{en:"The spending trajectory",de:"Die Ausgabenentwicklung",fr:"La trajectoire des d\u00e9penses",es:"La trayectoria del gasto"}],
-    [".section h2",2,{en:"What the Military Service Modernisation Act actually does",de:"Was das Wehrdienst-Modernisierungsgesetz bewirkt",fr:"Ce que fait la loi de modernisation du service militaire",es:"Lo que hace la Ley de Modernizaci\u00f3n del Servicio Militar"}],
-    [".section h2",3,{en:"Active personnel: the math",de:"Aktives Personal: die Rechnung",fr:"Effectifs actifs: les chiffres",es:"Personal activo: las cuentas"}],
-    [".section h2",4,{en:"The reserve shortfall \u2014 and why it leads to conscription",de:"Der Reservemangel \u2014 und warum er zur Wehrpflicht f\u00fchrt",fr:"Le d\u00e9ficit de r\u00e9serve \u2014 et pourquoi il m\u00e8ne \u00e0 la conscription",es:"El d\u00e9ficit de reserva \u2014 y por qu\u00e9 conduce a la conscripci\u00f3n"}],
-    [".section h2",5,{en:"The structure works in both outcomes",de:"Die Struktur funktioniert bei beiden Ergebnissen",fr:"La structure fonctionne dans les deux sc\u00e9narios",es:"La estructura funciona en ambos escenarios"}],
-    [".section h2",6,{en:"What to watch, and when",de:"Was zu beobachten ist und wann",fr:"Ce qu\u2019il faut surveiller, et quand",es:"Qu\u00e9 vigilar y cu\u00e1ndo"}],
-    [".section h2",7,{en:"Five factual findings",de:"F\u00fcnf sachliche Feststellungen",fr:"Cinq constats factuels",es:"Cinco hallazgos factuales"}],
-    /* SECTION LEADS */
-    [".section-lead",0,{en:"Germany\u2019s defence posture has been reshaped by three distinct legislative acts, each building on the last.",de:"Deutschlands Verteidigungshaltung wurde durch drei aufeinander aufbauende Gesetzgebungsakte umgestaltet.",fr:"La posture de d\u00e9fense de l\u2019Allemagne a \u00e9t\u00e9 remodel\u00e9e par trois actes l\u00e9gislatifs distincts.",es:"La postura de defensa de Alemania ha sido transformada por tres actos legislativos."}],
-    [".section-lead",1,{en:"Germany\u2019s defence budget has grown at ~21% annually since 2022. In absolute EUR terms, the increase is historically unprecedented in the post-war period.",de:"Deutschlands Verteidigungshaushalt ist seit 2022 um ca. 21% j\u00e4hrlich gewachsen \u2014 historisch einmalig in der Nachkriegszeit.",fr:"Le budget de d\u00e9fense a augment\u00e9 d\u2019environ 21% par an depuis 2022 \u2014 sans pr\u00e9c\u00e9dent dans l\u2019apr\u00e8s-guerre.",es:"El presupuesto de defensa ha crecido ~21% anual desde 2022 \u2014 sin precedente en la posguerra."}],
-    [".section-lead",2,{en:"The WDModG, in force since January 1 2026, contains several distinct legal mechanisms operating on different timelines and requiring different political conditions to activate.",de:"Das WDModG, seit 1. Januar 2026 in Kraft, enth\u00e4lt mehrere Mechanismen auf unterschiedlichen Zeitschienen mit unterschiedlichen Aktivierungsbedingungen.",fr:"Le WDModG, en vigueur depuis le 1er janvier 2026, contient plusieurs m\u00e9canismes juridiques op\u00e9rant sur diff\u00e9rents calendriers.",es:"El WDModG, en vigor desde el 1 de enero de 2026, contiene varios mecanismos jur\u00eddicos con diferentes plazos y condiciones."}],
-    [".section-lead",3,{en:"The statutory targets for active soldiers (186,000\u2013270,000 over 2026\u20132035) are borderline achievable through 2030\u20132031 under current voluntary dynamics. The later years require significant intake growth.",de:"Die gesetzlichen Ziele f\u00fcr aktive Soldaten (186.000\u2013270.000 f\u00fcr 2026\u20132035) sind bis 2030\u20132031 knapp erreichbar. Sp\u00e4tere Jahre erfordern deutlich h\u00f6here Einstellungen.",fr:"Les objectifs l\u00e9gaux (186\u2009000\u2013270\u2009000 pour 2026\u20132035) sont r\u00e9alisables \u00e0 court terme. Les ann\u00e9es ult\u00e9rieures n\u00e9cessitent un recrutement bien plus \u00e9lev\u00e9.",es:"Los objetivos legales (186.000\u2013270.000 para 2026\u20132035) son alcanzables a corto plazo. Los a\u00f1os posteriores requieren mucho m\u00e1s reclutamiento."}],
-    [".section-lead",4,{en:"The statutory reserve targets \u2014 rising from 60,000 today to 200,000 by 2033 \u2014 cannot be met through voluntary dynamics. The reason is arithmetically straightforward: the existing reserve stock is declining faster than new voluntary completers can replace it.",de:"Die gesetzlichen Reserveziele \u2014 von 60.000 auf 200.000 bis 2033 \u2014 k\u00f6nnen durch Freiwilligkeit nicht erreicht werden. Der Bestand schrumpft schneller als Freiwillige ihn ersetzen.",fr:"Les objectifs de r\u00e9serve \u2014 de 60\u2009000 \u00e0 200\u2009000 d\u2019ici 2033 \u2014 ne peuvent \u00eatre atteints volontairement. Le stock d\u00e9cline plus vite que les volontaires ne le remplacent.",es:"Los objetivos de reserva \u2014 de 60.000 a 200.000 para 2033 \u2014 no son alcanzables voluntariamente. El stock disminuye m\u00e1s r\u00e1pido de lo que los voluntarios lo reemplazan."}],
-    [".section-lead",5,{en:"Irrespective of whether voluntary recruitment succeeds or fails, the legal architecture produces the same destination: a larger military with operational mobilisation capacity. The route differs; the destination does not.",de:"Unabh\u00e4ngig ob Freiwilligenrekrutierung gelingt oder scheitert: Die Rechtsarchitektur f\u00fchrt zum selben Ziel. Der Weg unterscheidet sich; das Ziel nicht.",fr:"Que le recrutement volontaire r\u00e9ussisse ou \u00e9choue, l\u2019architecture juridique produit la m\u00eame destination. L\u2019itin\u00e9raire diff\u00e8re; la destination non.",es:"Independientemente del reclutamiento voluntario, la arquitectura jur\u00eddica produce el mismo destino. La ruta difiere; el destino no."}],
-    [".section-lead",6,{en:"The following dates and decision points will determine whether the voluntary model continues or the conscription path is activated.",de:"Die folgenden Termine bestimmen, ob das Freiwilligenmodell fortbesteht oder die Wehrpflicht aktiviert wird.",fr:"Les dates suivantes d\u00e9termineront si le mod\u00e8le volontaire continue ou si la conscription est activ\u00e9e.",es:"Las siguientes fechas determinar\u00e1n si el modelo voluntario contin\u00faa o se activa la conscripci\u00f3n."}],
-    /* CHART TITLES */
-    [".chart-title",0,{en:"German defence spending 2015\u20132029",de:"Deutsche Verteidigungsausgaben 2015\u20132029",fr:"D\u00e9penses de d\u00e9fense 2015\u20132029",es:"Gasto de defensa 2015\u20132029"}],
-    [".chart-title",1,{en:"Spending vs. personnel: indexed (2022 = 100)",de:"Ausgaben vs. Personal: indexiert (2022 = 100)",fr:"D\u00e9penses vs. effectifs (2022 = 100)",es:"Gasto vs. personal (2022 = 100)"}],
-    [".chart-title",2,{en:"Active force: statutory targets vs. projected trajectory",de:"Aktive Truppe: Gesetzliche Ziele vs. Prognose",fr:"Force active: objectifs vs. trajectoire",es:"Fuerza activa: objetivos vs. trayectoria"}],
-    [".chart-title",3,{en:"The conscription arithmetic: statutory target vs. voluntary reality (2026\u20132035)",de:"Die Wehrpflicht-Arithmetik: Gesetzliches Ziel vs. freiwillige Realit\u00e4t (2026\u20132035)",fr:"L\u2019arithm\u00e9tique de la conscription: objectif l\u00e9gal vs. r\u00e9alit\u00e9 (2026\u20132035)",es:"La aritm\u00e9tica de la conscripci\u00f3n: objetivo legal vs. realidad (2026\u20132035)"}],
-    [".chart-title",4,{en:"Annual reserve flows (thousands)",de:"J\u00e4hrliche Reservefl\u00fcsse (Tsd.)",fr:"Flux annuels de r\u00e9serve (milliers)",es:"Flujos anuales de reserva (miles)"}],
-    /* CHART SUBS */
-    [".chart-sub",0,{en:"EUR billions, actual and projected. Includes regular budget plus Sonderverm\u00f6gen drawdown.",de:"Mrd. EUR, tats\u00e4chlich und geplant. Inkl. Sonderverm\u00f6gen.",fr:"Milliards d\u2019EUR, r\u00e9el et projet\u00e9. Budget + Sonderverm\u00f6gen.",es:"Miles de M\u20ac, real y proyectado. Presupuesto + Sonderverm\u00f6gen."}],
-    [".chart-sub",1,{en:"The diagnostic gap: money rising, bodies flat.",de:"Die diagnostische L\u00fccke: Geld steigt, K\u00f6pfe stagnieren.",fr:"L\u2019\u00e9cart: l\u2019argent monte, les effectifs stagnent.",es:"La brecha: el dinero sube, los efectivos no."}],
-    [".chart-sub",2,{en:"Thousands of soldiers. Shaded corridor = statutory min/max per WDModG.",de:"Tausend Soldaten. Schattiert = gesetzlicher Korridor.",fr:"Milliers de soldats. Couloir = min/max l\u00e9gal.",es:"Miles de soldados. Corredor = m\u00edn/m\u00e1x legal."}],
-    [".chart-sub",3,{en:"Thousands of trained reservists. This is the central quantitative finding of this analysis.",de:"Tausend ausgebildete Reservisten. Zentraler Befund dieser Analyse.",fr:"Milliers de r\u00e9servistes. Constat central de cette analyse.",es:"Miles de reservistas. Hallazgo central de este an\u00e1lisis."}],
-    [".chart-sub",4,{en:"Outflow (conscripts aging out) vs. inflow (voluntary completers joining reserve)",de:"Abgang (alternde Wehrpflichtige) vs. Zugang (Freiwillige)",fr:"Sorties (conscrits vieillissants) vs. entr\u00e9es (volontaires)",es:"Salida (reclutas envejeciendo) vs. entrada (voluntarios)"}],
-    /* FINDINGS (DOM order: Conclusion, Central Finding, Factual observation) */
-    [".finding-label",0,{en:"Conclusion",de:"Schlussfolgerung",fr:"Conclusion",es:"Conclusi\u00f3n"}],
-    [".finding-label",1,{en:"Central Finding",de:"Zentrales Ergebnis",fr:"Constat central",es:"Hallazgo central"}],
-    [".finding-label",2,{en:"Factual observation",de:"Sachliche Feststellung",fr:"Observation factuelle",es:"Observaci\u00f3n factual"}],
-    [".finding h3",0,{en:"The reserve arithmetic creates a structural path to mandatory service that does not depend on political will \u2014 only on time.",de:"Die Reservearithmetik schafft einen strukturellen Weg zur Wehrpflicht, der nicht vom politischen Willen abh\u00e4ngt \u2014 nur von der Zeit.",fr:"L\u2019arithm\u00e9tique de la r\u00e9serve cr\u00e9e un chemin structurel vers le service obligatoire qui ne d\u00e9pend que du temps.",es:"La aritm\u00e9tica de la reserva crea un camino hacia el servicio obligatorio que depende solo del tiempo."}],
-    [".finding h3",1,{en:"By 2033 \u2014 the year the law mandates 200,000 trained reservists \u2014 the projected stock under voluntary dynamics is approximately 25,000\u201335,000. The gap is not marginal. It is approximately 170,000.",de:"Bis 2033 \u2014 dem Jahr, in dem das Gesetz 200.000 Reservisten vorschreibt \u2014 liegt der prognostizierte Bestand bei ca. 25.000\u201335.000. Die L\u00fccke betr\u00e4gt rund 170.000.",fr:"D\u2019ici 2033, le stock projet\u00e9 est d\u2019environ 25\u2009000\u201335\u2009000. L\u2019\u00e9cart est d\u2019environ 170\u2009000.",es:"Para 2033, el stock proyectado es de ~25.000\u201335.000. El d\u00e9ficit es de aproximadamente 170.000."}],
-    [".finding h3",2,{en:"The law\u2019s design ensures forward progress regardless of whether voluntary recruitment succeeds or fails. This is not an accusation of intent. It is a description of structure.",de:"Die Gesetzesstruktur gew\u00e4hrleistet Fortschritt unabh\u00e4ngig vom Rekrutierungserfolg. Das ist keine Anschuldigung. Es ist eine Strukturbeschreibung.",fr:"La loi assure des progr\u00e8s quel que soit le r\u00e9sultat du recrutement. Ce n\u2019est pas une accusation. C\u2019est une description.",es:"La ley asegura progreso independientemente del reclutamiento. No es una acusaci\u00f3n. Es una descripci\u00f3n de estructura."}],
-    /* METRICS */
-    [".metric-label",0,{en:"Annual spending CAGR 2022\u20132026",de:"J\u00e4hrl. Ausgabenwachstum 2022\u20132026",fr:"TCAC d\u00e9penses 2022\u20132026",es:"TCAC gasto 2022\u20132026"}],
-    [".metric-label",1,{en:"Annual personnel CAGR same period",de:"J\u00e4hrl. Personalwachstum",fr:"TCAC effectifs",es:"TCAC personal"}],
-    [".metric-label",2,{en:"Ratio of spending to personnel growth rate",de:"Verh\u00e4ltnis Ausgaben-/Personalwachstum",fr:"Ratio d\u00e9penses/effectifs",es:"Ratio gasto/personal"}],
-    /* RATCHET */
-    [".path-label",0,{en:"Path A \u2014 Voluntary targets met",de:"Pfad A \u2014 Freiwilligenziele erreicht",fr:"Voie A \u2014 Objectifs atteints",es:"V\u00eda A \u2014 Objetivos alcanzados"}],
-    [".path-title",0,{en:"Sufficient volunteers enlist",de:"Gen\u00fcgend Freiwillige",fr:"Suffisamment de volontaires",es:"Suficientes voluntarios"}],
-    [".path-label",1,{en:"Path B \u2014 Voluntary targets missed",de:"Pfad B \u2014 Freiwilligenziele verfehlt",fr:"Voie B \u2014 Objectifs manqu\u00e9s",es:"V\u00eda B \u2014 Objetivos no alcanzados"}],
-    [".path-title",1,{en:"Shortfall confirmed in biannual report",de:"Fehlbestand best\u00e4tigt",fr:"D\u00e9ficit confirm\u00e9",es:"D\u00e9ficit confirmado"}],
-    [".d-label",0,{en:"Common destination \u2014 regardless of path taken",de:"Gemeinsames Ziel \u2014 unabh\u00e4ngig vom Pfad",fr:"Destination commune \u2014 quel que soit le chemin",es:"Destino com\u00fan \u2014 independientemente de la v\u00eda"}],
-    /* TIMELINE TITLES */
-    [".tl-title",0,{en:"Zeitenwende Speech \u2014 Chancellor Scholz",de:"Zeitenwende-Rede \u2014 Kanzler Scholz",fr:"Discours Zeitenwende \u2014 Chancelier Scholz",es:"Discurso Zeitenwende \u2014 Canciller Scholz"}],
-    [".tl-title",1,{en:"Debt Brake Constitutional Reform \u2014 Chancellor Merz",de:"Schuldenbremsen-Reform \u2014 Kanzler Merz",fr:"R\u00e9forme constitutionnelle \u2014 Chancelier Merz",es:"Reforma constitucional \u2014 Canciller Merz"}],
-    [".tl-title",2,{en:"Military Service Modernisation Act (WDModG) \u2014 in force",de:"Wehrdienst-Modernisierungsgesetz (WDModG) \u2014 in Kraft",fr:"Loi WDModG \u2014 en vigueur",es:"Ley WDModG \u2014 en vigor"}],
-    [".tl-title",3,{en:"First biannual reserve report due to Bundestag",de:"Erster Halbjahresbericht zur Reserve",fr:"Premier rapport semestriel de r\u00e9serve",es:"Primer informe semestral de reserva"}],
-    [".tl-title",4,{en:"Mandatory Musterung begins for men born 2008+",de:"Pflichtmusterung ab Jahrgang 2008",fr:"Musterung obligatoire (n\u00e9s \u22652008)",es:"Musterung obligatoria (nacidos \u22652008)"}],
-    [".tl-title",5,{en:"Annual voluntary recruitment figure for 2027 published",de:"Rekrutierungszahl 2027 ver\u00f6ffentlicht",fr:"Chiffres de recrutement 2027",es:"Cifras de reclutamiento 2027"}],
-    [".tl-title",6,{en:"Decision window for Bedarfswehrpflicht vote",de:"Entscheidungsfenster Bedarfswehrpflicht",fr:"Fen\u00eatre de d\u00e9cision Bedarfswehrpflicht",es:"Ventana de decisi\u00f3n Bedarfswehrpflicht"}],
-    [".tl-title",7,{en:"\u00a72 WPflG \u2014 Automatic activation path",de:"\u00a72 WPflG \u2014 Automatische Aktivierung",fr:"\u00a72 WPflG \u2014 Activation automatique",es:"\u00a72 WPflG \u2014 Activaci\u00f3n autom\u00e1tica"}],
-    [".tl-title",8,{en:"Statutory reserve minimum of 200,000 due",de:"Gesetzliches Reserveminimum 200.000 f\u00e4llig",fr:"Minimum l\u00e9gal de 200\u2009000 exigible",es:"M\u00ednimo legal de 200.000 exigible"}],
-    /* TIMELINE DATES */
-    [".tl-date",0,{en:"February 27, 2022",de:"27. Februar 2022",fr:"27 f\u00e9vrier 2022",es:"27 de febrero de 2022"}],
-    [".tl-date",1,{en:"March 21, 2025",de:"21. M\u00e4rz 2025",fr:"21 mars 2025",es:"21 de marzo de 2025"}],
-    [".tl-date",2,{en:"January 1, 2026",de:"1. Januar 2026",fr:"1er janvier 2026",es:"1 de enero de 2026"}],
-    [".tl-date",3,{en:"Mid-2027",de:"Mitte 2027",fr:"Mi-2027",es:"Mediados de 2027"}],
-    [".tl-date",4,{en:"July 1, 2027",de:"1. Juli 2027",fr:"1er juillet 2027",es:"1 de julio de 2027"}],
-    [".tl-date",5,{en:"Late 2027 \u2013 Early 2028",de:"Ende 2027 \u2013 Anfang 2028",fr:"Fin 2027 \u2013 D\u00e9but 2028",es:"Fines 2027 \u2013 Inicios 2028"}],
-    [".tl-date",6,{en:"2028\u20132029",de:"2028\u20132029",fr:"2028\u20132029",es:"2028\u20132029"}],
-    [".tl-date",7,{en:"Any time",de:"Jederzeit",fr:"\u00c0 tout moment",es:"En cualquier momento"}],
-    [".tl-date",8,{en:"2033",de:"2033",fr:"2033",es:"2033"}],
-    /* BOX LABELS */
-    [".box-label",0,{en:"The short version",de:"Kurzfassung",fr:"En bref",es:"En resumen"}],
-    [".box-label",1,{en:"Analyst Detail \u2014 The three structural shifts and their interaction",de:"Detail \u2014 Die drei strukturellen Ver\u00e4nderungen",fr:"D\u00e9tail \u2014 Les trois changements structurels",es:"Detalle \u2014 Los tres cambios estructurales"}],
-    [".box-label",2,{en:"The short version",de:"Kurzfassung",fr:"En bref",es:"En resumen"}],
-    [".box-label",3,{en:"The short version",de:"Kurzfassung",fr:"En bref",es:"En resumen"}],
-    [".box-label",4,{en:"Analyst Detail \u2014 Full quantitative basis for conclusions",de:"Detail \u2014 Quantitative Grundlage",fr:"D\u00e9tail \u2014 Base quantitative",es:"Detalle \u2014 Base cuantitativa"}],
-    [".box-label",5,{en:"In plain language",de:"Verst\u00e4ndlich erkl\u00e4rt",fr:"En langage simple",es:"En lenguaje sencillo"}],
-    [".box-label",6,{en:"In plain language",de:"Verst\u00e4ndlich erkl\u00e4rt",fr:"En langage simple",es:"En lenguaje sencillo"}],
-    [".box-label",7,{en:"Why the gap matters",de:"Warum die L\u00fccke wichtig ist",fr:"Pourquoi l\u2019\u00e9cart compte",es:"Por qu\u00e9 importa la brecha"}],
-    [".box-label",8,{en:"Analyst Detail \u2014 Historical comparison",de:"Detail \u2014 Historischer Vergleich",fr:"D\u00e9tail \u2014 Comparaison historique",es:"Detalle \u2014 Comparaci\u00f3n hist\u00f3rica"}],
-    [".box-label",9,{en:"In plain language",de:"Verst\u00e4ndlich erkl\u00e4rt",fr:"En langage simple",es:"En lenguaje sencillo"}],
-    [".box-label",10,{en:"Analyst Detail \u2014 The two-path structure",de:"Detail \u2014 Die Zwei-Pfad-Struktur",fr:"D\u00e9tail \u2014 Structure \u00e0 deux voies",es:"Detalle \u2014 Estructura de dos v\u00edas"}],
-    [".box-label",11,{en:"In plain language",de:"Verst\u00e4ndlich erkl\u00e4rt",fr:"En langage simple",es:"En lenguaje sencillo"}],
-    [".box-label",12,{en:"Analyst Detail \u2014 Attrition reconstruction",de:"Detail \u2014 Abgangsrekonstruktion",fr:"D\u00e9tail \u2014 Reconstruction de l\u2019attrition",es:"Detalle \u2014 Reconstrucci\u00f3n de deserci\u00f3n"}],
-    [".box-label",13,{en:"The bucket analogy",de:"Die Eimer-Analogie",fr:"L\u2019analogie du seau",es:"La analog\u00eda del cubo"}],
-    [".box-label",14,{en:"Analyst Detail \u2014 Full reserve arithmetic",de:"Detail \u2014 Vollst\u00e4ndige Reservearithmetik",fr:"D\u00e9tail \u2014 Arithm\u00e9tique de la r\u00e9serve",es:"Detalle \u2014 Aritm\u00e9tica de la reserva"}],
-    [".box-label",15,{en:"In plain language",de:"Verst\u00e4ndlich erkl\u00e4rt",fr:"En langage simple",es:"En lenguaje sencillo"}],
-    /* WARNING */
-    [".w-label",0,{en:"Key legal nuance",de:"Wichtige rechtliche Nuance",fr:"Nuance juridique cl\u00e9",es:"Matiz jur\u00eddico clave"}],
-    /* HISTORICAL CHART */
-    [".hrc-t",0,{en:"Bundeswehr reserve strength: 55 years of history",de:"Reservest\u00e4rke der Bundeswehr: 55 Jahre",fr:"R\u00e9serve de la Bundeswehr: 55 ans",es:"Reserva de la Bundeswehr: 55 a\u00f1os"}],
-    [".hrc-s",0,{en:"From mass conscription army to voluntary shortfall. The collapse of the trained reserve is not a forecast \u2014 it already happened.",de:"Von der Massenarmee zur Unterbesetzung. Der Zusammenbruch der Reserve ist keine Prognose \u2014 er ist bereits eingetreten.",fr:"De l\u2019arm\u00e9e de masse au d\u00e9ficit. L\u2019effondrement de la r\u00e9serve n\u2019est pas une pr\u00e9vision \u2014 il a d\u00e9j\u00e0 eu lieu.",es:"De ej\u00e9rcito de masas a d\u00e9ficit. El colapso de la reserva no es un pron\u00f3stico \u2014 ya ocurri\u00f3."}],
-    [".hrc-l1",0,{en:"Trained reserve (estimated)",de:"Ausgebildete Reserve (gesch.)",fr:"R\u00e9serve form\u00e9e (est.)",es:"Reserva formada (est.)"}],
-    [".hrc-l2",0,{en:"WDModG statutory target (from 2026)",de:"WDModG-Ziel (ab 2026)",fr:"Objectif WDModG (d\u00e8s 2026)",es:"Objetivo WDModG (desde 2026)"}],
-    /* PERSONAL SUMMARY */
-    [".ps-label",0,{en:"What this means for you personally",de:"Was das f\u00fcr Sie pers\u00f6nlich bedeutet",fr:"Ce que cela signifie pour vous",es:"Lo que esto significa para usted"}],
-    [".ps-sub",0,{en:"If you are a German man aged 17\u201345 \u2014 or know one",de:"Wenn Sie ein deutscher Mann zwischen 17 und 45 sind \u2014 oder einen kennen",fr:"Si vous \u00eates un homme allemand de 17 \u00e0 45 ans \u2014 ou en connaissez un",es:"Si es un hombre alem\u00e1n de 17 a 45 a\u00f1os \u2014 o conoce a uno"}],
-    [".ps-headline",0,{en:"Since January 1, 2026, every German male aged 17\u201345 is subject to military oversight, a travel restriction, and inclusion in a national conscription register \u2014 whether or not he has ever served. Mandatory medical assessments begin July 2027. The law contains a built-in path to compulsory service.",de:"Seit dem 1. Januar 2026 unterliegt jeder deutsche Mann zwischen 17 und 45 der milit\u00e4rischen \u00dcberwachung, einer Reisebeschr\u00e4nkung und der Aufnahme in ein Wehrpflichtregister \u2014 unabh\u00e4ngig davon, ob er je gedient hat. Pflichtmusterungen beginnen im Juli 2027. Das Gesetz enth\u00e4lt einen vorgezeichneten Weg zur Wehrpflicht.",fr:"Depuis le 1er janvier 2026, tout homme allemand de 17 \u00e0 45 ans est soumis \u00e0 une surveillance militaire, une restriction de voyage et l\u2019inscription dans un registre de conscription \u2014 qu\u2019il ait servi ou non. Les examens obligatoires commencent en juillet 2027. La loi contient un chemin vers le service obligatoire.",es:"Desde el 1 de enero de 2026, todo hombre alem\u00e1n de 17 a 45 a\u00f1os est\u00e1 sujeto a vigilancia militar, restricci\u00f3n de viaje e inscripci\u00f3n en un registro de conscripci\u00f3n \u2014 haya servido o no. Los ex\u00e1menes obligatorios comienzan en julio de 2027. La ley contiene un camino hacia el servicio obligatorio."}],
-    [".ps-c1-label",0,{en:"Already in force \u2014 no vote needed",de:"Bereits in Kraft \u2014 keine Abstimmung n\u00f6tig",fr:"D\u00e9j\u00e0 en vigueur \u2014 aucun vote requis",es:"Ya en vigor \u2014 sin votaci\u00f3n necesaria"}],
-    [".ps-c2-label",0,{en:"Coming next",de:"Was als N\u00e4chstes kommt",fr:"Prochaines \u00e9tapes",es:"Lo que viene"}],
-    [".ps-risk-label",0,{en:"Individual risk by age group",de:"Individuelles Risiko nach Altersgruppe",fr:"Risque individuel par tranche d\u2019\u00e2ge",es:"Riesgo individual por grupo de edad"}],
-    [".ps-r1-title",0,{en:"17\u201325 years old (born 2001\u20132009)",de:"17\u201325 Jahre (geb. 2001\u20132009)",fr:"17\u201325 ans (n\u00e9s 2001\u20132009)",es:"17\u201325 a\u00f1os (nacidos 2001\u20132009)"}],
-    [".ps-r2-title",0,{en:"26\u201335 years old (born 1991\u20132000)",de:"26\u201335 Jahre (geb. 1991\u20132000)",fr:"26\u201335 ans (n\u00e9s 1991\u20132000)",es:"26\u201335 a\u00f1os (nacidos 1991\u20132000)"}],
-    [".ps-r3-title",0,{en:"36\u201345 years old (born 1981\u20131990)",de:"36\u201345 Jahre (geb. 1981\u20131990)",fr:"36\u201345 ans (n\u00e9s 1981\u20131990)",es:"36\u201345 a\u00f1os (nacidos 1981\u20131990)"}],
-    [".ps-c1-1",0,{en:"\u2022 Travel restriction: You need Bundeswehr approval to leave Germany for more than 3 months. Currently described as \u201cgenerally granted,\u201d but the legal obligation exists.",de:"\u2022 Reisebeschr\u00e4nkung: Sie ben\u00f6tigen eine Genehmigung der Bundeswehr, um Deutschland f\u00fcr mehr als 3 Monate zu verlassen. Derzeit \u201ein der Regel zu erteilen\u201c \u2014 aber die Pflicht besteht.",fr:"\u2022 Restriction de voyage: Autorisation de la Bundeswehr requise pour quitter l\u2019Allemagne plus de 3 mois. Actuellement \u00ab g\u00e9n\u00e9ralement accord\u00e9e \u00bb, mais l\u2019obligation l\u00e9gale existe.",es:"\u2022 Restricci\u00f3n de viaje: Necesita autorizaci\u00f3n de la Bundeswehr para salir de Alemania m\u00e1s de 3 meses. Actualmente \u00abgeneralmente concedida\u00bb, pero la obligaci\u00f3n legal existe."}],
-    [".ps-c1-2",0,{en:"\u2022 Conscription register: Your data is being entered into a national military database \u2014 contact details, fitness status, qualifications.",de:"\u2022 Wehrpflichtregister: Ihre Daten werden in eine nationale Datenbank aufgenommen \u2014 Kontaktdaten, Tauglichkeit, Qualifikationen.",fr:"\u2022 Registre: Vos donn\u00e9es sont entr\u00e9es dans une base militaire nationale \u2014 coordonn\u00e9es, aptitude, qualifications.",es:"\u2022 Registro: Sus datos se ingresan en una base de datos militar \u2014 contacto, aptitud, cualificaciones."}],
-    [".ps-c1-3",0,{en:"\u2022 Mandatory questionnaire: If born 2008 or later, you must complete an online military fitness declaration on turning 18.",de:"\u2022 Pflichtfragebogen: Ab Jahrgang 2008 m\u00fcssen Sie mit 18 eine Online-Bereitschaftserkl\u00e4rung ausf\u00fcllen.",fr:"\u2022 Questionnaire obligatoire: Si n\u00e9 en 2008 ou apr\u00e8s, d\u00e9claration en ligne obligatoire \u00e0 18 ans.",es:"\u2022 Cuestionario obligatorio: Si naci\u00f3 en 2008 o despu\u00e9s, declaraci\u00f3n obligatoria al cumplir 18."}],
-    [".ps-c1-4",0,{en:"\u2022 Automatic trigger: If the Bundestag declares a state of defence, conscription reactivates instantly under a 1956 law. No new legislation needed.",de:"\u2022 Automatischer Ausl\u00f6ser: Bei Verteidigungsfall tritt die Wehrpflicht sofort in Kraft \u2014 Gesetz von 1956. Kein neues Gesetz n\u00f6tig.",fr:"\u2022 D\u00e9clencheur automatique: Si le Bundestag d\u00e9clare l\u2019\u00e9tat de d\u00e9fense, la conscription se r\u00e9active (loi de 1956). Aucune nouvelle loi requise.",es:"\u2022 Activaci\u00f3n autom\u00e1tica: Si el Bundestag declara estado de defensa, la conscripci\u00f3n se reactiva (ley de 1956). Sin nueva legislaci\u00f3n."}],
-    [".ps-c2-1",0,{en:"\u2022 July 2027: Mandatory medical assessment (Musterung) for all men born 2008+. Results permanently recorded.",de:"\u2022 Juli 2027: Pflichtmusterung f\u00fcr alle M\u00e4nner ab Jahrgang 2008. Ergebnisse dauerhaft gespeichert.",fr:"\u2022 Juillet 2027: Examen m\u00e9dical obligatoire pour les hommes n\u00e9s \u22652008. R\u00e9sultats enregistr\u00e9s.",es:"\u2022 Julio 2027: Examen m\u00e9dico obligatorio para hombres nacidos \u22652008. Resultados registrados permanentemente."}],
-    [".ps-c2-2",0,{en:"\u2022 Mid-2027: First official reserve report to the Bundestag. This analysis shows it will document a shortfall \u2014 the legal precondition for the next step.",de:"\u2022 Mitte 2027: Erster Reservebericht an den Bundestag. Diese Analyse zeigt, dass er einen Fehlbestand dokumentieren wird \u2014 die Voraussetzung f\u00fcr den n\u00e4chsten Schritt.",fr:"\u2022 Mi-2027: Premier rapport de r\u00e9serve au Bundestag. Cette analyse montre qu\u2019il documentera un d\u00e9ficit \u2014 pr\u00e9condition l\u00e9gale.",es:"\u2022 Mediados 2027: Primer informe de reserva al Bundestag. Este an\u00e1lisis muestra que documentar\u00e1 un d\u00e9ficit \u2014 precondici\u00f3n legal."}],
-    [".ps-c2-3",0,{en:"\u2022 2028\u20132030 (est.): Parliamentary vote on needs-based conscription. The reserve cannot reach 200,000 voluntarily. Projected: ~28,000 by 2033. Gap: ~170,000. This arithmetic is the mechanism that drives the vote.",de:"\u2022 2028\u20132030 (gesch.): Bundestagsabstimmung \u00fcber Bedarfswehrpflicht. Die Reserve kann 200.000 nicht freiwillig erreichen. Prognose: ~28.000 bis 2033. L\u00fccke: ~170.000. Diese Arithmetik treibt die Abstimmung.",fr:"\u2022 2028\u20132030 (est.): Vote sur la Bedarfswehrpflicht. La r\u00e9serve ne peut atteindre 200\u2009000 volontairement. Projection: ~28\u2009000 en 2033. \u00c9cart: ~170\u2009000.",es:"\u2022 2028\u20132030 (est.): Votaci\u00f3n sobre Bedarfswehrpflicht. La reserva no alcanza 200.000 voluntariamente. Proyecci\u00f3n: ~28.000 en 2033. Brecha: ~170.000."}],
-    [".ps-r1-text",0,{en:"Highest exposure. Register data most complete when a conscription vote is likely. If 30,000 called annually from ~2.5M eligible: ~1.2%/year, ~19% cumulative over 17-year window.",de:"H\u00f6chstes Risiko. Registerdaten am vollst\u00e4ndigsten bei einer Abstimmung. Bei 30.000/Jahr aus 2,5 Mio.: ~1,2%/Jahr, ~19% kumuliert \u00fcber 17 Jahre.",fr:"Exposition maximale. Donn\u00e9es les plus compl\u00e8tes lors d\u2019un vote. 30\u2009000/an sur 2,5M: ~1,2%/an, ~19% cumul\u00e9 sur 17 ans.",es:"M\u00e1xima exposici\u00f3n. Datos m\u00e1s completos al momento de una votaci\u00f3n. 30.000/a\u00f1o de 2,5M: ~1,2%/a\u00f1o, ~19% acumulado en 17 a\u00f1os."}],
-    [".ps-r2-text",0,{en:"In scope, lower priority. Travel restriction applies. Younger cohorts with complete data are operationally more likely targets.",de:"Im Rahmen, niedrigere Priorit\u00e4t. Reisebeschr\u00e4nkung gilt. J\u00fcngere Jahrg\u00e4nge mit vollst\u00e4ndigen Daten sind wahrscheinlichere Ziele.",fr:"Dans le champ, priorit\u00e9 moindre. Restriction de voyage applicable. Les cohortes plus jeunes sont plus probablement vis\u00e9es.",es:"En alcance, menor prioridad. Restricci\u00f3n de viaje aplica. Cohortes m\u00e1s j\u00f3venes con datos completos son objetivos m\u00e1s probables."}],
-    [".ps-r3-text",0,{en:"Aging out of eligibility 2026\u20132035. Travel restriction until 45. Low call-up probability but not zero.",de:"Reserve-Berechtigung l\u00e4uft 2026\u20132035 aus. Reisebeschr\u00e4nkung bis 45. Niedrige Einberufungswahrscheinlichkeit, aber nicht null.",fr:"\u00c9ligibilit\u00e9 expire 2026\u20132035. Restriction jusqu\u2019\u00e0 45 ans. Probabilit\u00e9 faible mais non nulle.",es:"Elegibilidad expira 2026\u20132035. Restricci\u00f3n hasta los 45. Probabilidad baja pero no cero."}],
-    [".ps-note",0,{en:"Probabilities are order-of-magnitude estimates, not predictions. Actual risk depends on a selection mechanism not yet legislated. Conscientious objection remains a constitutional right (Art.\u00a04 Abs.\u00a03 GG). Full sourced analysis below.",de:"Wahrscheinlichkeiten sind Gr\u00f6\u00dfenordnungssch\u00e4tzungen, keine Vorhersagen. Das tats\u00e4chliche Risiko h\u00e4ngt von einem noch nicht geregelten Auswahlverfahren ab. Kriegsdienstverweigerung bleibt Grundrecht (Art. 4 Abs. 3 GG). Vollst\u00e4ndige Analyse mit Quellen folgt.",fr:"Estimations d\u2019ordre de grandeur, pas des pr\u00e9dictions. Le risque d\u00e9pend d\u2019un m\u00e9canisme non encore l\u00e9gif\u00e9r\u00e9. L\u2019objection de conscience reste un droit (Art. 4 Abs. 3 GG). Analyse compl\u00e8te ci-dessous.",es:"Estimaciones de orden de magnitud, no predicciones. El riesgo depende de un mecanismo a\u00fan no legislado. La objeci\u00f3n de conciencia es derecho constitucional (Art. 4 Abs. 3 GG). An\u00e1lisis completo abajo."}]
-  ];
-
-  function apply(lang){
-    for(var i=0;i<R.length;i++){
-      try{
-        var els=document.querySelectorAll(R[i][0]);
-        if(els[R[i][1]]&&R[i][2][lang]!=null){
-          els[R[i][1]].textContent=R[i][2][lang];
-        }
-      }catch(e){}
-    }
-    cur.textContent=lang.toUpperCase();
-    var opts=menu.querySelectorAll(".lang-sw-opt");
-    for(var j=0;j<opts.length;j++){
-      opts[j].className="lang-sw-opt"+(opts[j].getAttribute("data-l")===lang?" on":"");
-    }
-    menu.classList.remove("show");
-    document.documentElement.lang=lang;
-  }
-
-  menu.onclick=function(e){
-    var t=e.target;
-    while(t&&t!==menu){
-      if(t.classList&&t.classList.contains("lang-sw-opt")){
-        e.stopPropagation();
-        apply(t.getAttribute("data-l"));
-        return;
-      }
-      t=t.parentElement;
-    }
-  };
+/* i18n */
+(function(){"use strict";
+var btn=document.getElementById("lsBtn"),menu=document.getElementById("lsMenu"),cur=document.getElementById("lsCur");
+if(!btn||!menu||!cur)return;
+btn.onclick=function(e){e.stopPropagation();menu.classList.toggle("show");};
+document.addEventListener("click",function(){menu.classList.remove("show");});
+var R=[
+[".hero-label",0,{en:"Factual Analysis · Germany · 2022–2035",de:"Faktenanalyse · Deutschland · 2022–2035",fr:"Analyse factuelle · Allemagne · 2022–2035"}],
+[".hero h1",0,{en:"Three laws, €600bn, and a mathematical structure that works regardless of outcome",de:"Drei Gesetze, 600 Mrd. € und eine mathematische Struktur, die unabhängig vom Ergebnis funktioniert",fr:"Trois lois, 600 Mds € et une structure qui fonctionne quel que soit le résultat"}],
+[".hero-sub",0,{en:"This analysis examines what Germany’s defence transformation actually shows in the data: spending, personnel, legal architecture, and — most importantly — the reserve arithmetic that determines the critical path.",de:"Diese Analyse untersucht, was Deutschlands Verteidigungstransformation in den Daten zeigt: Ausgaben, Personal, Rechtsarchitektur und — vor allem — die Reservearithmetik, die den kritischen Pfad bestimmt.",fr:"Cette analyse examine la transformation de la défense allemande dans les données : dépenses, effectifs, architecture juridique et l’arithmétique de la réserve."}],
+[".hero-stat-label",0,{en:"2026 defence budget",de:"Verteidigungshaushalt 2026",fr:"Budget de défense 2026"}],
+[".hero-stat-sub",0,{en:"Up from €33bn in 2015 — a 3.3× increase",de:"Von 33 Mrd. € (2015) — 3,3-fach",fr:"Depuis 33 Mds € en 2015 — ×3,3"}],
+[".hero-stat-label",1,{en:"Trained reservists today",de:"Ausgebildete Reservisten heute",fr:"Réservistes formés"}],
+[".hero-stat-sub",1,{en:"Law requires 200,000 by 2033",de:"Gesetz verlangt 200.000 bis 2033",fr:"La loi exige 200 000 d’ici 2033"}],
+[".hero-stat-label",2,{en:"First mandatory reserve report",de:"Erster Pflicht-Reservebericht",fr:"Premier rapport obligatoire"}],
+[".hero-stat-sub",2,{en:"When the shortfall becomes legally documented",de:"Wenn der Fehlbestand rechtlich dokumentiert wird",fr:"Quand le déficit sera documenté"}],
+[".nav-brand",0,{en:"Germany’s Defence Transformation",de:"Verteidigungstransformation",fr:"Défense allemande"}],
+[".nav-links a",0,{en:"Analysis A·B·C",de:"Analyse A·B·C",fr:"Analyse A·B·C"}],
+[".nav-links a",1,{en:"Spending",de:"Ausgaben",fr:"Dépenses"}],
+[".nav-links a",2,{en:"The Law",de:"Das Gesetz",fr:"La loi"}],
+[".nav-links a",3,{en:"Active Force",de:"Aktive Truppe",fr:"Force active"}],
+[".nav-links a",4,{en:"Reserve",de:"Reserve",fr:"Réserve"}],
+[".nav-links a",5,{en:"Mechanism",de:"Mechanismus",fr:"Mécanisme"}],
+[".nav-links a",6,{en:"Key Dates",de:"Termine",fr:"Dates clés"}],
+[".rb-t",0,{en:"Germany’s Defence Transformation",de:"Deutschlands Verteidigungstransformation",fr:"Transformation de la défense allemande"}],
+[".rb-t",1,{en:"Factual Analysis",de:"Faktenanalyse",fr:"Analyse factuelle"}],
+[".rb-t",2,{en:"Data current: April 2026",de:"Datenstand: April 2026",fr:"Données : avril 2026"}],
+[".rb-t",3,{en:"Independent research — no political position",de:"Unabhängige Analyse — keine politische Position",fr:"Recherche indépendante — sans position politique"}],
+[".part-title",0,{en:"Why this analysis exists",de:"Warum diese Analyse existiert",fr:"Pourquoi cette analyse existe"}],
+[".part-title",1,{en:"What the law does — a German man’s legal status, precisely",de:"Was das Gesetz bewirkt — der Rechtsstatus eines deutschen Mannes",fr:"Ce que la loi fait — le statut juridique d’un homme allemand"}],
+[".part-title",2,{en:"What the numbers tell us will happen",de:"Was die Zahlen über die Zukunft sagen",fr:"Ce que les chiffres annoncent"}],
+[".section-num",0,{en:"Section 1 · Context",de:"Abschnitt 1 · Kontext",fr:"Section 1 · Contexte"}],
+[".section-num",1,{en:"Section 2 · Spending",de:"Abschnitt 2 · Ausgaben",fr:"Section 2 · Dépenses"}],
+[".section-num",2,{en:"Section 3 · The Law",de:"Abschnitt 3 · Das Gesetz",fr:"Section 3 · La loi"}],
+[".section-num",3,{en:"Section 4 · Active Force",de:"Abschnitt 4 · Aktive Truppe",fr:"Section 4 · Force active"}],
+[".section-num",4,{en:"Section 5 · The Reserve — The Path to Conscription",de:"Abschnitt 5 · Die Reserve — Der Weg zur Wehrpflicht",fr:"Section 5 · La réserve — Vers la conscription"}],
+[".section-num",5,{en:"Section 6 · The Mechanism",de:"Abschnitt 6 · Der Mechanismus",fr:"Section 6 · Le mécanisme"}],
+[".section-num",6,{en:"Section 7 · Decision Calendar",de:"Abschnitt 7 · Entscheidungskalender",fr:"Section 7 · Calendrier"}],
+[".section-num",7,{en:"Summary",de:"Zusammenfassung",fr:"Résumé"}],
+[".section h2",0,{en:"Three structural changes since 2022",de:"Drei strukturelle Veränderungen seit 2022",fr:"Trois changements structurels depuis 2022"}],
+[".section h2",1,{en:"The spending trajectory",de:"Die Ausgabenentwicklung",fr:"La trajectoire des dépenses"}],
+[".section h2",2,{en:"What the Military Service Modernisation Act actually does",de:"Was das Wehrdienst-Modernisierungsgesetz bewirkt",fr:"Ce que fait la loi de modernisation du service militaire"}],
+[".section h2",3,{en:"Active personnel: the math",de:"Aktives Personal: die Rechnung",fr:"Effectifs actifs : les chiffres"}],
+[".section h2",4,{en:"The reserve shortfall — and why it leads to conscription",de:"Der Reservemangel — und warum er zur Wehrpflicht führt",fr:"Le déficit de réserve — et pourquoi il mène à la conscription"}],
+[".section h2",5,{en:"The structure works in both outcomes",de:"Die Struktur funktioniert bei beiden Ergebnissen",fr:"La structure fonctionne dans les deux scénarios"}],
+[".section h2",6,{en:"What to watch, and when",de:"Was zu beobachten ist und wann",fr:"Ce qu’il faut surveiller, et quand"}],
+[".section h2",7,{en:"Five factual findings",de:"Fünf sachliche Feststellungen",fr:"Cinq constats factuels"}],
+[".section-lead",0,{en:"Germany’s defence posture has been reshaped by three distinct legislative acts, each building on the last.",de:"Deutschlands Verteidigungshaltung wurde durch drei aufeinander aufbauende Gesetzgebungsakte grundlegend umgestaltet.",fr:"La posture de défense de l’Allemagne a été remodelée par trois actes législatifs distincts."}],
+[".section-lead",1,{en:"Germany’s defence budget has grown at ~21% annually since 2022. In absolute EUR terms, the increase is historically unprecedented in the post-war period.",de:"Deutschlands Verteidigungshaushalt ist seit 2022 um ca. 21 % jährlich gewachsen — historisch einmalig in der Nachkriegszeit.",fr:"Le budget de défense a augmenté d’environ 21 % par an depuis 2022 — sans précédent dans l’après-guerre."}],
+[".section-lead",2,{en:"The WDModG, in force since January 1 2026, contains several distinct legal mechanisms operating on different timelines and requiring different political conditions to activate.",de:"Das WDModG, seit 1. Januar 2026 in Kraft, enthält mehrere Mechanismen mit unterschiedlichen Zeitschienen und Aktivierungsbedingungen.",fr:"Le WDModG, en vigueur depuis le 1er janvier 2026, contient plusieurs mécanismes juridiques opérant sur différents calendriers."}],
+[".section-lead",3,{en:"The statutory targets for active soldiers (186,000–270,000 over 2026–2035) are borderline achievable through 2030–2031 under current voluntary dynamics. The later years require significant intake growth.",de:"Die gesetzlichen Ziele für aktive Soldaten (186.000–270.000 für 2026–2035) sind bis 2030–2031 knapp erreichbar. Spätere Jahre erfordern deutlich höhere Einstellungen.",fr:"Les objectifs légaux (186 000–270 000 pour 2026–2035) sont réalisables à court terme. Les années ultérieures nécessitent un recrutement accru."}],
+[".section-lead",4,{en:"The statutory reserve targets — rising from 60,000 today to 200,000 by 2033 — cannot be met through voluntary dynamics. The reason is arithmetically straightforward: the existing reserve stock is declining faster than new voluntary completers can replace it.",de:"Die gesetzlichen Reserveziele — von 60.000 auf 200.000 bis 2033 — können durch Freiwilligkeit nicht erreicht werden. Der Bestand schrumpft schneller als Freiwillige ihn ersetzen können.",fr:"Les objectifs de réserve — de 60 000 à 200 000 d’ici 2033 — ne peuvent être atteints volontairement."}],
+[".section-lead",5,{en:"Irrespective of whether voluntary recruitment succeeds or fails, the legal architecture produces the same destination: a larger military with operational mobilisation capacity. The route differs; the destination does not.",de:"Unabhängig ob Freiwilligenrekrutierung gelingt oder scheitert: Die Rechtsarchitektur führt zum selben Ziel. Der Weg unterscheidet sich; das Ziel nicht.",fr:"Que le recrutement volontaire réussisse ou échoue, l’architecture juridique produit la même destination."}],
+[".section-lead",6,{en:"The following dates and decision points will determine whether the voluntary model continues or the conscription path is activated.",de:"Die folgenden Termine bestimmen, ob das Freiwilligenmodell fortbesteht oder die Wehrpflicht aktiviert wird.",fr:"Les dates suivantes détermineront si le modèle volontaire continue ou si la conscription est activée."}],
+[".chart-title",0,{en:"German defence spending 2015–2029",de:"Deutsche Verteidigungsausgaben 2015–2029",fr:"Dépenses de défense 2015–2029"}],
+[".chart-title",1,{en:"Spending vs. personnel: indexed (2022 = 100)",de:"Ausgaben vs. Personal: indexiert (2022 = 100)",fr:"Dépenses vs. effectifs (2022 = 100)"}],
+[".chart-title",2,{en:"Active force: statutory targets vs. projected trajectory",de:"Aktive Truppe: Gesetzliche Ziele vs. Prognose",fr:"Force active : objectifs vs. trajectoire"}],
+[".chart-title",3,{en:"The conscription arithmetic: statutory target vs. voluntary reality (2026–2035)",de:"Die Wehrpflicht-Arithmetik: Gesetzliches Ziel vs. freiwillige Realität (2026–2035)",fr:"L’arithmétique de la conscription (2026–2035)"}],
+[".chart-title",4,{en:"Annual reserve flows (thousands)",de:"Jährliche Reserveflüsse (Tsd.)",fr:"Flux annuels de réserve (milliers)"}],
+[".chart-sub",0,{en:"EUR billions, actual and projected. Includes regular budget plus Sondervermögen drawdown.",de:"Mrd. EUR, tatsächlich und geplant. Inkl. Sondervermögen.",fr:"Milliards d’EUR, réel et projeté. Budget + Sondervermögen."}],
+[".chart-sub",1,{en:"The diagnostic gap: money rising, bodies flat.",de:"Die diagnostische Lücke: Geld steigt, Köpfe stagnieren.",fr:"L’écart : l’argent monte, les effectifs stagnent."}],
+[".chart-sub",2,{en:"Thousands of soldiers. Shaded corridor = statutory min/max per WDModG.",de:"Tausend Soldaten. Schattiert = gesetzlicher Korridor gemäß WDModG.",fr:"Milliers de soldats. Couloir = min/max légal selon le WDModG."}],
+[".chart-sub",3,{en:"Thousands of trained reservists. This is the central quantitative finding of this analysis.",de:"Tausend ausgebildete Reservisten. Zentraler quantitativer Befund dieser Analyse.",fr:"Milliers de réservistes. Constat quantitatif central de cette analyse."}],
+[".chart-sub",4,{en:"Outflow (conscripts aging out) vs. inflow (voluntary completers joining reserve)",de:"Abgang (alternde Wehrpflichtige) vs. Zugang (Freiwillige)",fr:"Sorties (conscrits vieillissants) vs. entrées (volontaires)"}],
+[".finding-label",0,{en:"Conclusion",de:"Schlussfolgerung",fr:"Conclusion"}],
+[".finding-label",1,{en:"Central Finding",de:"Zentrales Ergebnis",fr:"Constat central"}],
+[".finding-label",2,{en:"Factual observation",de:"Sachliche Feststellung",fr:"Observation factuelle"}],
+[".finding h3",0,{en:"The reserve arithmetic creates a structural path to mandatory service that does not depend on political will — only on time.",de:"Die Reservearithmetik schafft einen strukturellen Weg zur Wehrpflicht, der nicht vom politischen Willen abhängt — nur von der Zeit.",fr:"L’arithmétique de la réserve crée un chemin structurel vers le service obligatoire qui ne dépend que du temps."}],
+[".finding h3",1,{en:"By 2033 — the year the law mandates 200,000 trained reservists — the projected stock under voluntary dynamics is approximately 25,000–35,000. The gap is not marginal. It is approximately 170,000.",de:"Bis 2033 — dem Jahr, in dem das Gesetz 200.000 Reservisten vorschreibt — liegt der prognostizierte Bestand bei ca. 25.000–35.000. Die Lücke beträgt rund 170.000.",fr:"D’ici 2033, le stock projeté est d’environ 25 000–35 000. L’écart est d’environ 170 000."}],
+[".finding h3",2,{en:"The law’s design ensures forward progress regardless of whether voluntary recruitment succeeds or fails. This is not an accusation of intent. It is a description of structure.",de:"Die Gesetzesstruktur gewährleistet Fortschritt unabhängig vom Rekrutierungserfolg. Das ist kein Vorwurf. Es ist eine Strukturbeschreibung.",fr:"La loi assure des progrès quel que soit le recrutement. Ce n’est pas une accusation. C’est une description de structure."}],
+[".metric-label",0,{en:"Annual spending CAGR 2022–2026",de:"Jährl. Ausgabenwachstum 2022–2026",fr:"TCAC dépenses 2022–2026"}],
+[".metric-label",1,{en:"Annual personnel CAGR same period",de:"Jährl. Personalwachstum",fr:"TCAC effectifs"}],
+[".metric-label",2,{en:"Ratio of spending to personnel growth rate",de:"Verhältnis Ausgaben-/Personalwachstum",fr:"Ratio dépenses/effectifs"}],
+[".path-label",0,{en:"Path A — Voluntary targets met",de:"Pfad A — Freiwilligenziele erreicht",fr:"Voie A — Objectifs atteints"}],
+[".path-title",0,{en:"Sufficient volunteers enlist",de:"Genügend Freiwillige melden sich",fr:"Suffisamment de volontaires"}],
+[".path-label",1,{en:"Path B — Voluntary targets missed",de:"Pfad B — Freiwilligenziele verfehlt",fr:"Voie B — Objectifs manqués"}],
+[".path-title",1,{en:"Shortfall confirmed in biannual report",de:"Fehlbestand im Halbjahresbericht bestätigt",fr:"Déficit confirmé"}],
+[".d-label",0,{en:"Common destination — regardless of path taken",de:"Gemeinsames Ziel — unabhängig vom Pfad",fr:"Destination commune — quel que soit le chemin"}],
+[".tl-title",0,{en:"Zeitenwende Speech — Chancellor Scholz",de:"Zeitenwende-Rede — Kanzler Scholz",fr:"Discours Zeitenwende — Chancelier Scholz"}],
+[".tl-title",1,{en:"Debt Brake Constitutional Reform — Chancellor Merz",de:"Schuldenbremsen-Reform — Kanzler Merz",fr:"Réforme constitutionnelle — Chancelier Merz"}],
+[".tl-title",2,{en:"Military Service Modernisation Act (WDModG) — in force",de:"Wehrdienst-Modernisierungsgesetz (WDModG) — in Kraft",fr:"Loi WDModG — en vigueur"}],
+[".tl-title",3,{en:"First biannual reserve report due to Bundestag",de:"Erster Halbjahresbericht zur Reserve",fr:"Premier rapport semestriel de réserve"}],
+[".tl-title",4,{en:"Mandatory Musterung begins for men born 2008+",de:"Pflichtmusterung ab Jahrgang 2008",fr:"Musterung obligatoire (nés ≥2008)"}],
+[".tl-title",5,{en:"Annual voluntary recruitment figure for 2027 published",de:"Rekrutierungszahl 2027 veröffentlicht",fr:"Chiffres de recrutement 2027"}],
+[".tl-title",6,{en:"Decision window for Bedarfswehrpflicht vote",de:"Entscheidungsfenster Bedarfswehrpflicht",fr:"Fenêtre Bedarfswehrpflicht"}],
+[".tl-title",7,{en:"§2 WPflG — Automatic activation path",de:"§2 WPflG — Automatische Aktivierung",fr:"§2 WPflG — Activation automatique"}],
+[".tl-title",8,{en:"Statutory reserve minimum of 200,000 due",de:"Gesetzliches Reserveminimum 200.000 fällig",fr:"Minimum légal de 200 000 exigible"}],
+[".tl-date",0,{en:"February 27, 2022",de:"27. Februar 2022",fr:"27 février 2022"}],
+[".tl-date",1,{en:"March 21, 2025",de:"21. März 2025",fr:"21 mars 2025"}],
+[".tl-date",2,{en:"January 1, 2026",de:"1. Januar 2026",fr:"1er janvier 2026"}],
+[".tl-date",3,{en:"Mid-2027",de:"Mitte 2027",fr:"Mi-2027"}],
+[".tl-date",4,{en:"July 1, 2027",de:"1. Juli 2027",fr:"1er juillet 2027"}],
+[".tl-date",5,{en:"Late 2027 – Early 2028",de:"Ende 2027 – Anfang 2028",fr:"Fin 2027 – Début 2028"}],
+[".tl-date",6,{en:"2028–2029",de:"2028–2029",fr:"2028–2029"}],
+[".tl-date",7,{en:"Any time",de:"Jederzeit",fr:"À tout moment"}],
+[".tl-date",8,{en:"2033",de:"2033",fr:"2033"}],
+[".box-label",0,{en:"The short version",de:"Kurzfassung",fr:"En bref"}],
+[".box-label",1,{en:"Analyst Detail — The three structural shifts and their interaction",de:"Detail — Die drei strukturellen Veränderungen",fr:"Détail — Les trois changements structurels"}],
+[".box-label",2,{en:"The short version",de:"Kurzfassung",fr:"En bref"}],
+[".box-label",3,{en:"The short version",de:"Kurzfassung",fr:"En bref"}],
+[".box-label",4,{en:"Analyst Detail — Full quantitative basis for conclusions",de:"Detail — Quantitative Grundlage",fr:"Détail — Base quantitative"}],
+[".box-label",5,{en:"In plain language",de:"Verständlich erklärt",fr:"En langage simple"}],
+[".box-label",6,{en:"In plain language",de:"Verständlich erklärt",fr:"En langage simple"}],
+[".box-label",7,{en:"Why the gap matters",de:"Warum die Lücke wichtig ist",fr:"Pourquoi l’écart compte"}],
+[".box-label",8,{en:"Analyst Detail — Historical comparison",de:"Detail — Historischer Vergleich",fr:"Détail — Comparaison historique"}],
+[".box-label",9,{en:"In plain language",de:"Verständlich erklärt",fr:"En langage simple"}],
+[".box-label",10,{en:"Analyst Detail — The two-path structure",de:"Detail — Die Zwei-Pfad-Struktur",fr:"Détail — Structure à deux voies"}],
+[".box-label",11,{en:"In plain language",de:"Verständlich erklärt",fr:"En langage simple"}],
+[".box-label",12,{en:"Analyst Detail — Attrition reconstruction",de:"Detail — Abgangsrekonstruktion",fr:"Détail — Reconstruction de l’attrition"}],
+[".box-label",13,{en:"The bucket analogy",de:"Die Eimer-Analogie",fr:"L’analogie du seau"}],
+[".box-label",14,{en:"Analyst Detail — Full reserve arithmetic",de:"Detail — Vollständige Reservearithmetik",fr:"Détail — Arithmétique de la réserve"}],
+[".box-label",15,{en:"In plain language",de:"Verständlich erklärt",fr:"En langage simple"}],
+[".w-label",0,{en:"Key legal nuance",de:"Wichtige rechtliche Nuance",fr:"Nuance juridique clé"}],
+[".hrc-t",0,{en:"Bundeswehr reserve strength: 55 years of history",de:"Reservestärke der Bundeswehr: 55 Jahre Kontext",fr:"Réserve de la Bundeswehr : 55 ans"}],
+[".hrc-s",0,{en:"From mass conscription army to voluntary shortfall. The collapse of the trained reserve is not a forecast — it already happened.",de:"Von der Massenarmee zur Unterbesetzung. Der Zusammenbruch der Reserve ist keine Prognose — er ist bereits eingetreten.",fr:"De l’armée de masse au déficit. L’effondrement n’est pas une prévision — il a déjà eu lieu."}],
+[".hrc-l1",0,{en:"Trained reserve (estimated)",de:"Ausgebildete Reserve (geschätzt)",fr:"Réserve formée (est.)"}],
+[".hrc-l2",0,{en:"WDModG statutory target (from 2026)",de:"WDModG-Ziel (ab 2026)",fr:"Objectif WDModG (dès 2026)"}],
+[".hrc-n",0,{en:"Sources: IISS Military Balance; BMVg annual reports. Red marker: 2011 conscription suspension.",de:"Quellen: IISS Military Balance; BMVg-Jahresberichte. Rote Markierung: 2011 Aussetzung der Wehrpflicht.",fr:"Sources : IISS Military Balance ; rapports BMVg. Marqueur rouge : suspension de la conscription 2011."}],
+[".ps-label",0,{en:"What this means for you personally",de:"Was das für Sie persönlich bedeutet",fr:"Ce que cela signifie pour vous"}],
+[".ps-sub",0,{en:"If you are a German man aged 17–45 — or know one",de:"Wenn Sie ein deutscher Mann zwischen 17 und 45 sind — oder einen kennen",fr:"Si vous êtes un homme allemand de 17 à 45 ans — ou en connaissez un"}],
+[".ps-c1-label",0,{en:"Already in force — no vote needed",de:"Bereits in Kraft — keine Abstimmung nötig",fr:"Déjà en vigueur — aucun vote requis"}],
+[".ps-c2-label",0,{en:"Coming next",de:"Was als Nächstes kommt",fr:"Prochaines étapes"}],
+[".ps-risk-label",0,{en:"Individual risk by age group",de:"Individuelles Risiko nach Altersgruppe",fr:"Risque individuel par tranche d’âge"}],
+[".ps-r1-title",0,{en:"17–25 years old (born 2001–2009)",de:"17–25 Jahre (geb. 2001–2009)",fr:"17–25 ans (nés 2001–2009)"}],
+[".ps-r2-title",0,{en:"26–35 years old (born 1991–2000)",de:"26–35 Jahre (geb. 1991–2000)",fr:"26–35 ans (nés 1991–2000)"}],
+[".ps-r3-title",0,{en:"36–45 years old (born 1981–1990)",de:"36–45 Jahre (geb. 1981–1990)",fr:"36–45 ans (nés 1981–1990)"}],
+];
+var H=[
+[".simple-box p",0,{en:"Germany has made more fundamental changes to its military legal structure in the past 36 months than in any comparable period since it founded the Bundeswehr in 1955. Much of the commentary has focused on the spending numbers. This analysis focuses instead on what the laws actually say, what the reserve mathematics actually show, and what — following both to their logical conclusions — is likely to happen. We present verified facts. Where we draw conclusions, we label them as conclusions and explain exactly why the evidence supports them.",de:"Deutschland hat in den letzten 36 Monaten grundlegendere Änderungen an seiner militärischen Rechtsstruktur vorgenommen als in jedem vergleichbaren Zeitraum seit Gründung der Bundeswehr 1955. Die öffentliche Debatte konzentrierte sich auf die Ausgabenzahlen. Diese Analyse untersucht stattdessen, was die Gesetze tatsächlich sagen, was die Reservemathematik zeigt und was — beide bis zu ihren logischen Konsequenzen verfolgt — wahrscheinlich passieren wird. Wir präsentieren verifizierte Fakten. Wo wir Schlussfolgerungen ziehen, kennzeichnen wir sie als solche.",fr:"L’Allemagne a apporté plus de changements fondamentaux à sa structure juridique militaire au cours des 36 derniers mois que lors de toute période comparable depuis 1955. Cette analyse examine ce que les lois disent réellement, ce que l’arithmétique de la réserve montre, et ce qui en découle logiquement."}],
+[".simple-box p",2,{en:"If you are a German male between 17 and 45, three things already apply to you today without any further vote: you need government approval to leave Germany for more than three months, your data will be entered into a national military register, and if you were born in 2008 or later you will face a mandatory medical assessment. Beyond that, two additional scenarios are already built into the law — one requires a parliamentary vote to activate, one does not.",de:"Wenn Sie ein deutscher Mann zwischen 17 und 45 sind, gelten bereits heute drei Dinge für Sie ohne weitere Abstimmung: Sie benötigen eine staatliche Genehmigung, um Deutschland für mehr als drei Monate zu verlassen, Ihre Daten werden in ein nationales Militärregister aufgenommen, und ab Jahrgang 2008 müssen Sie sich einer Pflichtmusterung unterziehen. Darüber hinaus sind zwei weitere Szenarien bereits im Gesetz angelegt — eines erfordert eine Bundestagsabstimmung, eines nicht.",fr:"Si vous êtes un homme allemand de 17 à 45 ans, trois obligations s’appliquent déjà sans vote supplémentaire : autorisation requise pour quitter l’Allemagne plus de 3 mois, inscription au registre militaire, et examen médical obligatoire (nés ≥2008). Deux scénarios supplémentaires sont intégrés dans la loi."}],
+[".simple-box p",4,{en:"Think of it like a company that had been running lean for 30 years. In 2022, the board approved emergency funding. In 2025, they changed the corporate constitution to allow unlimited debt for defence. And also in 2025, they passed a law requiring all male employees under 45 to be registered and medically assessed — with a mechanism to compel them to work if not enough people volunteer.",de:"Stellen Sie sich ein Unternehmen vor, das 30 Jahre lang auf Sparflamme lief. 2022 genehmigte der Vorstand Notfallmittel. 2025 änderten sie die Satzung, um unbegrenzte Verschuldung für die Verteidigung zu ermöglichen. Und ebenfalls 2025 verabschiedeten sie ein Gesetz, das alle männlichen Mitarbeiter unter 45 zur Registrierung und ärztlichen Untersuchung verpflichtet — mit einem Mechanismus, um sie zur Arbeit zu zwingen, wenn sich nicht genügend Freiwillige melden.",fr:"Imaginez une entreprise fonctionnant au minimum depuis 30 ans. En 2022, le conseil approuve un financement d’urgence. En 2025, les statuts sont modifiés pour permettre un endettement illimité. Et une loi impose l’enregistrement et l’examen médical de tous les employés mâles de moins de 45 ans."}],
+[".simple-box p",5,{en:"Germany is spending dramatically more money on defence. But money buys equipment and infrastructure — it does not automatically translate into soldiers. The critical gap in this story is that spending has grown 3× while the number of soldiers has barely moved. That divergence is the analytical starting point for everything that follows.",de:"Deutschland gibt dramatisch mehr Geld für Verteidigung aus. Aber Geld kauft Ausrüstung und Infrastruktur — es übersetzt sich nicht automatisch in Soldaten. Die entscheidende Lücke: Die Ausgaben sind 3-fach gestiegen, während die Soldatenzahl sich kaum bewegt hat. Diese Divergenz ist der analytische Ausgangspunkt für alles Folgende.",fr:"L’Allemagne dépense beaucoup plus pour la défense. Mais l’argent achète de l’équipement, pas des soldats. Les dépenses ont triplé tandis que les effectifs n’ont pas bougé."}],
+[".simple-box p",6,{en:"The law does four things. First, it requires all men turning 18 to fill in a form. Second, from mid-2027, all these men must also get a medical. Third, all men aged 17–45 now need Bundeswehr permission to leave Germany for more than 3 months — even after they’ve left the army. Fourth, if not enough people volunteer, parliament can vote to make service compulsory. The law was widely reported as ‘voluntary’ — but several of these elements already apply to every German male whether or not they choose to serve.",de:"Das Gesetz bewirkt vier Dinge. Erstens müssen alle Männer mit 18 einen Fragebogen ausfüllen. Zweitens müssen ab Mitte 2027 alle diese Männer auch zur Musterung. Drittens brauchen alle Männer zwischen 17 und 45 eine Genehmigung der Bundeswehr, um Deutschland für mehr als 3 Monate zu verlassen — auch nach dem Ausscheiden aus der Armee. Viertens kann der Bundestag die Wehrpflicht beschließen, wenn sich nicht genügend Freiwillige melden. Das Gesetz wurde weithin als „freiwillig“ dargestellt — aber mehrere dieser Elemente gelten bereits für jeden deutschen Mann.",fr:"La loi fait quatre choses. Un questionnaire obligatoire à 18 ans. Un examen médical obligatoire dès mi-2027. Une restriction de voyage pour tous les hommes de 17–45 ans. Et un mécanisme pour imposer le service si le volontariat échoue."}],
+[".simple-box p",7,{en:"In both historical German rearmament periods (1900–1913 and 1933–1939), spending and personnel grew in close parallel. A large sustained divergence between the two is the signature of either: (a) an equipment backlog being cleared, or (b) spending growing faster than the institutional capacity to absorb it. Both dynamics are present here, but neither resolves without a structural solution to personnel.",de:"In beiden historischen deutschen Aufrüstungsperioden (1900–1913 und 1933–1939) wuchsen Ausgaben und Personal nahezu parallel. Eine große, anhaltende Divergenz ist entweder Anzeichen für (a) den Abbau eines Ausrüstungsstaus oder (b) Ausgaben, die schneller wachsen als die institutionelle Kapazität. Beides trifft hier zu, aber keines löst sich ohne eine strukturelle Personallösung.",fr:"Dans les deux périodes de réarmement allemand (1900–1913, 1933–1939), dépenses et effectifs ont progressé en parallèle. La divergence actuelle est historiquement anomale."}],
+[".simple-box p",8,{en:"Germany needs not just to hire more soldiers — it needs to hire enough to replace those who leave, plus add to the total. The annual ‘churn’ (soldiers leaving) is about 11–12% per year of the force. That means roughly 21,000 soldiers leave every year. With only ~25,000 new recruits in 2025 (a record), Germany is growing by just ~3,000/year. To hit 270,000 by 2035, it would need to grow by ~15,000/year AND still cover the 20,000+ annual departures — requiring ~35,000+ recruits per year by the mid-2030s.",de:"Deutschland muss nicht nur mehr Soldaten einstellen — es muss genug einstellen, um die Abgänger zu ersetzen und zusätzlich zu wachsen. Die jährliche Fluktuation liegt bei 11–12 % der Truppe, also ca. 21.000 Abgänge pro Jahr. Mit nur ~25.000 Neuzugängen 2025 (Rekord) wächst Deutschland um lediglich ~3.000/Jahr. Um 270.000 bis 2035 zu erreichen, bräuchte es ~15.000/Jahr Nettowachstum PLUS ~20.000+ Ersatz — also ~35.000+ Rekruten jährlich.",fr:"L’Allemagne doit non seulement recruter plus, mais aussi compenser ~21 000 départs annuels. Avec 25 000 recrues (record 2025), la croissance n’est que de ~3 000/an."}],
+[".simple-box p",9,{en:"Imagine a bucket currently holding 60,000 litres of water. Old water drains out continuously (former conscripts aging past 45, the eligibility cutoff) at roughly 11,000 litres per year. New water comes in (people completing voluntary service and joining the reserve) at roughly 7,000 litres per year. The bucket is losing about 4,000 litres per year. The law says the bucket must hold 200,000 litres by 2033 — more than three times its current volume. The math requires a completely different water source.",de:"Stellen Sie sich einen Eimer vor, der derzeit 60.000 Liter Wasser enthält. Altes Wasser fließt ständig ab (ehemalige Wehrpflichtige, die 45 werden) — ca. 11.000 Liter pro Jahr. Neues Wasser kommt hinzu (Freiwillige, die in die Reserve eintreten) — ca. 7.000 Liter pro Jahr. Der Eimer verliert ~4.000 Liter jährlich. Das Gesetz verlangt, dass der Eimer bis 2033 200.000 Liter fasst — mehr als das Dreifache. Die Mathematik erfordert eine völlig andere Wasserquelle.",fr:"Imaginez un seau contenant 60 000 litres. L’eau ancienne s’écoule à ~11 000 litres/an (conscrits dépassant 45 ans). L’eau nouvelle entre à ~7 000 litres/an. Le seau perd ~4 000 litres/an. La loi exige 200 000 litres d’ici 2033."}],
+[".simple-box p",10,{en:"In a normal business context, you’d call this a structure where you win whether option A or option B plays out. If enough people volunteer: Germany gets the military capability it wants. If not enough volunteer: the law’s trigger mechanism creates a legal obligation to pass conscription. Either way, the register and medical database built during the voluntary phase means mobilisation is faster than it would have been without the law.",de:"Im geschäftlichen Kontext würde man das eine Win-Win-Struktur nennen. Wenn genügend Freiwillige: Deutschland bekommt die militärische Fähigkeit. Wenn nicht: Der Auslösemechanismus des Gesetzes erzwingt die Wehrpflicht. In beiden Fällen sorgt das während der Freiwilligenphase aufgebaute Register dafür, dass die Mobilisierung schneller geht als ohne das Gesetz.",fr:"En termes d’affaires, c’est une structure gagnant-gagnant. Volontaires suffisants : l’Allemagne obtient ses capacités. Insuffisants : le mécanisme légal impose la conscription. Dans les deux cas, le registre accélère la mobilisation."}],
+[".tl-desc",0,{en:"Announced €100bn Sondervermögen (off-budget special fund) exclusively for Bundeswehr modernisation. This was additional debt, not reallocation. The fund has been spent primarily on equipment procurement and runs out in 2027.",de:"€100 Mrd. Sondervermögen (außerplanmäßiger Sonderfonds) ausschließlich für die Modernisierung der Bundeswehr angekündigt. Dies waren zusätzliche Schulden, keine Umschichtung. Der Fonds wurde hauptsächlich für Beschaffung verwendet und ist 2027 erschöpft.",fr:"100 Mds € de Sondervermögen annoncés pour la modernisation de la Bundeswehr. Dette supplémentaire, pas réallocation. Le fonds sera épuisé en 2027."}],
+[".tl-desc",1,{en:"Constitutional amendment (requiring 2/3 parliamentary majority) permanently removes defence spending above 1% of GDP from the debt brake. Simultaneously creates a €500bn infrastructure fund. Defence above 1% GDP can now be financed with unlimited new debt in perpetuity.",de:"Grundgesetzänderung (2/3-Mehrheit) entfernt dauerhaft Verteidigungsausgaben über 1 % des BIP aus der Schuldenbremse. Gleichzeitig wird ein 500 Mrd. €-Infrastrukturfonds geschaffen. Verteidigungsausgaben über 1 % BIP können jetzt zeitlich unbegrenzt mit neuen Schulden finanziert werden.",fr:"Amendement constitutionnel (majorité des 2/3) exemptant les dépenses de défense au-delà de 1 % du PIB du frein à l’endettement. Fonds d’infrastructure de 500 Mds € créé simultanément."}],
+[".tl-desc",2,{en:"Mandatory registration and medical assessment for all men born 2008+. Travel restriction for all males 17–45 (requires Bundeswehr approval for absences >3 months). Statutory numerical targets for active soldiers and reserves through 2035. A trigger mechanism for conscription if voluntary targets are not met.",de:"Verpflichtende Registrierung und Musterung für alle Männer ab Jahrgang 2008. Reisebeschränkung für alle Männer 17–45 (Genehmigung der Bundeswehr für Abwesenheiten >3 Monate). Gesetzliche Personalziele für aktive Soldaten und Reserve bis 2035. Auslösemechanismus für Wehrpflicht bei Nichterreichen der Freiwilligenziele.",fr:"Enregistrement obligatoire et examen médical pour les hommes nés ≥2008. Restriction de voyage pour tous les hommes de 17–45 ans. Objectifs d’effectifs jusqu’en 2035. Mécanisme de déclenchement de la conscription."}],
+[".tl-desc",3,{en:"§91a SG mandates a report on reserve development every 6 months from January 2027. If the analysis above is correct, this report will show a reserve stock below the 2026 statutory minimum of 70,000, and trending downward. This is the first documented, legally mandated evidence of structural shortfall.",de:"§91a SG schreibt ab Januar 2027 alle 6 Monate einen Bericht über die Reserveentwicklung vor. Wenn die obige Analyse korrekt ist, wird dieser Bericht einen Reservebestand unter dem gesetzlichen Minimum von 70.000 für 2026 zeigen — mit fallendem Trend. Dies ist der erste dokumentierte, gesetzlich vorgeschriebene Nachweis eines strukturellen Fehlbestands.",fr:"Le §91a SG impose un rapport semestriel sur la réserve à partir de janvier 2027. Ce rapport devrait montrer un effectif inférieur au minimum légal de 70 000."}],
+[".tl-desc",4,{en:"Medical examinations become compulsory for the first cohort. This is the beginning of comprehensive population-level fitness data collection. 24 assessment centres are being established nationwide. Until this date, the register contains only voluntarily provided health information.",de:"Ärztliche Untersuchungen werden für den ersten Jahrgang verpflichtend. Dies ist der Beginn der flächendeckenden Erfassung von Tauglichkeitsdaten. 24 Musterungszentren werden bundesweit eingerichtet. Bis zu diesem Datum enthält das Register nur freiwillig gemeldete Gesundheitsdaten.",fr:"Les examens médicaux deviennent obligatoires pour la première cohorte. 24 centres d’évaluation sont établis dans tout le pays."}],
+[".tl-desc",5,{en:"The target is 30,000 volunteers per year. The 2025 record was 25,000. If 2027 intake falls short of 30,000, this is the second sequential year below the threshold needed to maintain the voluntary model’s credibility. This is likely to coincide with the first reserve report showing decline.",de:"Das Ziel sind 30.000 Freiwillige pro Jahr. Der Rekord 2025 lag bei 25.000. Wenn der Zugang 2027 unter 30.000 bleibt, ist dies das zweite Jahr in Folge unter der Schwelle, die für die Glaubwürdigkeit des Freiwilligenmodells nötig ist.",fr:"L’objectif est de 30 000 volontaires/an. Le record 2025 était de 25 000."}],
+[".tl-desc",6,{en:"If multiple biannual reports confirm reserve decline rather than growth, the government faces a choice: request the Bundestag vote on needs-based conscription, or accept publicly documented non-compliance with its own statutory targets. The CDU/CSU governing majority was the original advocate for mandatory service. The SPD accepted the current structure as a compromise. The political conditions for a conscription vote will exist if and when the reports document shortfall — which the arithmetic suggests is likely within 2 reporting cycles.",de:"Wenn mehrere Halbjahresberichte den Rückgang der Reserve bestätigen, steht die Regierung vor der Wahl: Bundestagsabstimmung über Bedarfswehrpflicht beantragen oder die öffentlich dokumentierte Nichteinhaltung eigener Ziele akzeptieren. Die CDU/CSU war der ursprüngliche Befürworter der Wehrpflicht. Die SPD akzeptierte die jetzige Struktur als Kompromiss. Die politischen Bedingungen für eine Abstimmung werden entstehen, sobald die Berichte den Fehlbestand dokumentieren — was die Arithmetik innerhalb von 2 Berichtszyklen erwarten lässt.",fr:"Si les rapports confirment le déclin, le gouvernement devra choisir : voter la conscription ou accepter la non-conformité documentée."}],
+[".tl-desc",7,{en:"A formal declaration of a state of tension or defence under Arts. 80a/115a Basic Law — requiring a 2/3 Bundestag majority or, in emergency, a simplified process — triggers automatic conscription reactivation under the unchanged §2 WPflG. No new legislation required. The digital register, Musterung data, and career centre infrastructure built under WDModG mean this path is now operable within months of a declaration.",de:"Eine formelle Erklärung des Spannungs- oder Verteidigungsfalls gemäß Art. 80a/115a GG — erfordert 2/3-Bundestags­mehrheit oder vereinfachtes Verfahren im Notfall — aktiviert automatisch die Wehrpflicht gemäß dem unveränderten §2 WPflG. Kein neues Gesetz erforderlich. Das digitale Register und die Musterungsdaten ermöglichen eine Mobilisierung innerhalb von Monaten.",fr:"Déclaration d’état de tension/défense (Art. 80a/115a GG) — active automatiquement la conscription (§2 WPflG, inchangé depuis 1956). Le registre numérique permet une mobilisation en quelques mois."}],
+[".tl-desc",8,{en:"Under voluntary dynamics: projected reserve approximately 25,000–35,000. Statutory minimum: 200,000. The gap — approximately 165,000–175,000 — will have been documented publicly in 12 consecutive biannual reports by this date.",de:"Bei freiwilliger Dynamik: prognostizierte Reserve ca. 25.000–35.000. Gesetzliches Minimum: 200.000. Die Lücke — ca. 165.000–175.000 — wird bis zu diesem Datum in 12 aufeinanderfolgenden Halbjahresberichten öffentlich dokumentiert sein.",fr:"Sous dynamique volontaire : réserve projetée ~25 000–35 000. Minimum légal : 200 000. L’écart (~170 000) sera documenté dans 12 rapports consécutifs."}],
+[".path-desc",0,{en:"Active force grows toward 270,000. Reserve pipeline from NWD completers. Digital register fully populated. Medical data collected. Travel control infrastructure in place. §2 WPflG automatic mobilisation trigger remains always operative.",de:"Aktive Truppe wächst in Richtung 270.000. Reserve-Pipeline aus NWD-Absolventen. Digitales Register vollständig befüllt. Medizinische Daten erfasst. Reisekontrollinfrastruktur vorhanden. §2 WPflG-Automatismus bleibt jederzeit operativ.",fr:"Force active vers 270 000. Registre numérique complet. Données médicales collectées. Le §2 WPflG reste toujours opérationnel."}],
+[".path-desc",1,{en:"BMVg submits documented shortfall to Bundestag. CDU/CSU requests Bedarfswehrpflicht vote (their original preference). New legislation passes (political friction exists but is structurally primed). Conscription fills reserve pipeline. Digital register means rapid activation.",de:"BMVg legt dokumentierten Fehlbestand dem Bundestag vor. CDU/CSU beantragt Bedarfswehrpflicht-Abstimmung (ihre ursprüngliche Präferenz). Neues Gesetz wird verabschiedet. Wehrpflicht füllt die Reserve-Pipeline. Digitales Register ermöglicht schnelle Aktivierung.",fr:"Le BMVg soumet le déficit documenté au Bundestag. La CDU/CSU demande le vote. La conscription remplit la réserve. Le registre numérique permet une activation rapide."}],
+[".d-title",0,{en:"Larger standing force + populated mobilisation register + operational conscription infrastructure + §2 auto-trigger always available",de:"Größere Streitkräfte + befülltes Mobilisierungsregister + operative Wehrpflichtinfrastruktur + §2-Automatismus jederzeit verfügbar",fr:"Force armée plus importante + registre de mobilisation + infrastructure de conscription + déclencheur §2 toujours disponible"}],
+[".ps-headline",0,{en:"Since January 1, 2026, every German male aged 17–45 is subject to military oversight, a travel restriction, and inclusion in a national conscription register — whether or not he has ever served. Mandatory medical assessments begin July 2027. The law contains a built-in path to compulsory service.",de:"Seit dem 1. Januar 2026 unterliegt jeder deutsche Mann zwischen 17 und 45 der militärischen Überwachung, einer Reisebeschränkung und der Aufnahme in ein Wehrpflichtregister — unabhängig davon, ob er je gedient hat. Pflichtmusterungen beginnen im Juli 2027. Das Gesetz enthält einen vorgezeichneten Weg zur Wehrpflicht.",fr:"Depuis le 1er janvier 2026, tout homme allemand de 17 à 45 ans est soumis à une surveillance militaire, une restriction de voyage et l’inscription dans un registre de conscription. Les examens obligatoires commencent en juillet 2027. La loi contient un chemin vers le service obligatoire."}],
+[".ps-note",0,{en:"Probabilities are order-of-magnitude estimates, not predictions. Conscientious objection remains a constitutional right (Art. 4 Abs. 3 GG). Full sourced analysis below.",de:"Wahrscheinlichkeiten sind Größenordnungsschätzungen, keine Vorhersagen. Kriegsdienstverweigerung bleibt Grundrecht (Art. 4 Abs. 3 GG). Vollständige Analyse mit Quellen folgt.",fr:"Estimations d’ordre de grandeur. L’objection de conscience reste un droit (Art. 4 Abs. 3 GG). Analyse complète ci-dessous."}],
+[".ps-c1-1",0,{en:"• <strong>Travel restriction:</strong> You need Bundeswehr approval to leave Germany for more than 3 months. Currently described as “generally granted,” but the legal obligation exists.",de:"• <strong>Reisebeschränkung:</strong> Sie benötigen eine Genehmigung der Bundeswehr, um Deutschland für mehr als 3 Monate zu verlassen. Derzeit „in der Regel zu erteilen“ — aber die Pflicht besteht.",fr:"• <strong>Restriction de voyage :</strong> Autorisation de la Bundeswehr requise pour quitter l’Allemagne plus de 3 mois."}],
+[".ps-c1-2",0,{en:"• <strong>Conscription register:</strong> Your data is being entered into a national military database — contact details, fitness status, qualifications.",de:"• <strong>Wehrpflichtregister:</strong> Ihre Daten werden in eine nationale militärische Datenbank aufgenommen — Kontaktdaten, Tauglichkeit, Qualifikationen.",fr:"• <strong>Registre :</strong> Vos données sont entrées dans une base militaire nationale."}],
+[".ps-c1-3",0,{en:"• <strong>Mandatory questionnaire:</strong> If born 2008 or later, you must complete an online military fitness declaration on turning 18.",de:"• <strong>Pflichtfragebogen:</strong> Ab Jahrgang 2008 müssen Sie mit 18 eine Online-Bereitschaftserklärung ausfüllen.",fr:"• <strong>Questionnaire obligatoire :</strong> Déclaration en ligne obligatoire à 18 ans (nés ≥2008)."}],
+[".ps-c1-4",0,{en:"• <strong>Automatic trigger:</strong> If the Bundestag declares a state of defence, conscription reactivates instantly under a 1956 law. No new legislation needed.",de:"• <strong>Automatischer Auslöser:</strong> Bei Verteidigungsfall tritt die Wehrpflicht sofort in Kraft — Gesetz von 1956. Kein neues Gesetz nötig.",fr:"• <strong>Déclencheur automatique :</strong> En cas de défense, la conscription se réactive (loi de 1956)."}],
+[".ps-c2-1",0,{en:"• <strong>July 2027:</strong> Mandatory medical assessment (Musterung) for all men born 2008+. Results permanently recorded.",de:"• <strong>Juli 2027:</strong> Pflichtmusterung für alle Männer ab Jahrgang 2008. Ergebnisse dauerhaft gespeichert.",fr:"• <strong>Juillet 2027 :</strong> Examen médical obligatoire pour les hommes nés ≥2008."}],
+[".ps-c2-2",0,{en:"• <strong>Mid-2027:</strong> First official reserve report to the Bundestag. This analysis shows it will document a shortfall — the legal precondition for the next step.",de:"• <strong>Mitte 2027:</strong> Erster Reservebericht an den Bundestag. Diese Analyse zeigt, dass er einen Fehlbestand dokumentieren wird — die Voraussetzung für den nächsten Schritt.",fr:"• <strong>Mi-2027 :</strong> Premier rapport de réserve au Bundestag. Un déficit sera documenté."}],
+[".ps-c2-3",0,{en:"• <strong>2028–2030 (est.):</strong> Parliamentary vote on needs-based conscription. The reserve cannot reach 200,000 voluntarily. Projected: ~28,000 by 2033. Gap: ~170,000.",de:"• <strong>2028–2030 (gesch.):</strong> Bundestagsabstimmung über Bedarfswehrpflicht. Die Reserve kann 200.000 nicht freiwillig erreichen. Prognose: ~28.000 bis 2033. Lücke: ~170.000.",fr:"• <strong>2028–2030 (est.) :</strong> Vote sur la Bedarfswehrpflicht. Réserve projetée : ~28 000 en 2033. Écart : ~170 000."}],
+[".ps-r1-text",0,{en:"Highest exposure. Register data most complete when a conscription vote is likely. If 30,000 called annually from ~2.5M eligible: ~1.2%/year, ~19% cumulative over 17-year window.",de:"Höchstes Risiko. Registerdaten am vollständigsten bei einer Abstimmung. Bei 30.000/Jahr aus 2,5 Mio.: ~1,2%/Jahr, ~19% kumuliert über 17 Jahre.",fr:"Exposition maximale. 30 000/an sur 2,5M : ~1,2%/an, ~19% cumulé sur 17 ans."}],
+[".ps-r2-text",0,{en:"In scope, lower priority. Travel restriction applies. Younger cohorts with complete data are operationally more likely targets.",de:"Im Rahmen, niedrigere Priorität. Reisebeschränkung gilt. Jüngere Jahrgänge mit vollständigen Daten sind wahrscheinlichere Ziele.",fr:"Dans le champ, priorité moindre. Les cohortes plus jeunes sont plus probablement visées."}],
+[".ps-r3-text",0,{en:"Aging out of eligibility 2026–2035. Travel restriction until 45. Low call-up probability but not zero.",de:"Reserve-Berechtigung läuft 2026–2035 aus. Reisebeschränkung bis 45. Niedrige Einberufungswahrscheinlichkeit, aber nicht null.",fr:"Éligibilité expire 2026–2035. Restriction jusqu’à 45 ans. Probabilité faible mais non nulle."}],
+];
+function apply(lang){
+var i,els,el;
+for(i=0;i<R.length;i++){try{els=document.querySelectorAll(R[i][0]);el=els[R[i][1]];if(el&&R[i][2][lang]!=null)el.textContent=R[i][2][lang];}catch(e){}}
+for(i=0;i<H.length;i++){try{els=document.querySelectorAll(H[i][0]);el=els[H[i][1]];if(el&&H[i][2][lang]!=null)el.innerHTML=H[i][2][lang];}catch(e){}}
+cur.textContent=lang.toUpperCase();
+var opts=menu.querySelectorAll(".lang-sw-opt");
+for(var j=0;j<opts.length;j++)opts[j].className="lang-sw-opt"+(opts[j].getAttribute("data-l")===lang?" on":"");
+menu.classList.remove("show");
+document.documentElement.lang=lang;
+}
+menu.onclick=function(e){var t=e.target;while(t&&t!==menu){if(t.classList&&t.classList.contains("lang-sw-opt")){e.stopPropagation();apply(t.getAttribute("data-l"));return;}t=t.parentElement;}};
+apply("de");
 })();
 </script>
-
 </body>
 </html>
